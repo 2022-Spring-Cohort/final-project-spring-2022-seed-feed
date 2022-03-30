@@ -10,4 +10,6 @@ public class SeedAndFeedApplication {
 		SpringApplication.run(SeedAndFeedApplication.class, args);
 	}
 
+
+
 }
