@@ -7,15 +7,18 @@ export default function home(plants) {
     <input type="text" class="zipcode" placeholder="Enter Your Zipcode">
     <br>
     <button class="vegButton">List of Vegetables</button>
+    <div id="myDropdown" class="dropdown-content hide">
 
-    ${plants.map(plant =>{
+     ${plants.map(plant =>{ 
         return `
-        <form>
+        <section>
        <p class="vegList">${plant.name}</p>
         <input type="hidden" class="chosenVeg" value="${plant.id}">
-    </form>`
-    }).join("")
+    </section>`
     }
+    ).join("")
+    } 
+    </div>
     <br>
     <img class="vegImg" src="img/veg.png">
 </div>
