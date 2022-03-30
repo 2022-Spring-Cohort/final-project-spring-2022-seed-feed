@@ -1,0 +1,17 @@
+.vegImg{
+    height: 20em;
+}
+.mainSection{
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+}
+.navList{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.mainTitle{
+    text-align: center;
+
+}
