@@ -12,13 +12,13 @@ public class Plant {
     private long id;
     private String name;
     private int maturityDays;
-    private int height;
+    private String height;
     private String sunExposure;
     private int indoorCalc;
     private String photoLink;
 
 
-    public Plant(String name, int maturityDays, int height, String sunExposure, int indoorCalc, String photoLink) {
+    public Plant(String name, int maturityDays, String height, String sunExposure, int indoorCalc, String photoLink) {
         this.name = name;
         this.maturityDays = maturityDays;
         this.height = height;
@@ -39,7 +39,7 @@ public class Plant {
         return maturityDays;
     }
 
-    public int getHeight() {
+    public String getHeight() {
         return height;
     }
 
