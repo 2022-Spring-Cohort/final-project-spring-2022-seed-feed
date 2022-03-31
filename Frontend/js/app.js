@@ -22,38 +22,53 @@ function makeHomeView(){
 function makeHomeViewFromJSON(plants){
     containerEl.innerHTML = home(plants);
     //bind function will go here
-    const vegBtn = containerEl.querySelector(".vegButton");
-    vegBtn.addEventListener("click", myFunction);
+    // const vegBtn = containerEl.querySelector(".vegButton");
+    // vegBtn.addEventListener("click", myFunction);
     
 }
 makeHomeView();
 
-function myFunction() {
-    const dropdown = document.getElementById("myDropdown");
-    if (dropdown.classList.contains("hide")) {
-        dropdown.classList.remove("hide");
-        dropdown.classList.add("show");
-    }
-    else {
-        dropdown.classList.remove("show");
-        dropdown.classList.add("hide");
-    }
+// function myFunction() {
+//     const dropdown = document.getElementById("myDropdown");
+//     if (dropdown.classList.contains("hide")) {
+//         dropdown.classList.remove("hide");
+//         dropdown.classList.add("show");
+//     }
+//     else {
+//         dropdown.classList.remove("show");
+//         dropdown.classList.add("hide");
+//     }
 
 
-}
-window.onclick = function(event) {
-    if (!event.target.matches('.vegButton')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-          openDropdown.classList.add('hide');
-        }
-      }
-    }
-  }
+// }
+// window.onclick = function(event) {
+//     if (!event.target.matches('.vegButton')) {
+//       var dropdowns = document.getElementsByClassName("dropdown-content");
+//       var i;
+//       for (i = 0; i < dropdowns.length; i++) {
+//         var openDropdown = dropdowns[i];
+//         if (openDropdown.classList.contains('show')) {
+//           openDropdown.classList.remove('show');
+//           openDropdown.classList.add('hide');
+//         }
+//       }
+//     }
+//   }
+
+function ValidateVegSelection()  {  
+    var checkboxes = document.getElementsByName("veg_select");  
+    var numberOfCheckedItems = 0;  
+    for(var i = 0; i < checkboxes.length; i++)  
+    {  
+        if(checkboxes[i].checked)  
+            numberOfCheckedItems++;  
+    }  
+    if(numberOfCheckedItems > 2)  
+    {  
+        alert("You can't select more than two favorite pets!");  
+        return false;  
+    }  
+}  
 
 
 

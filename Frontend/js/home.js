@@ -4,26 +4,41 @@ export default function home(plants) {
     <div class="mainSection">
     <h1>Want to start a garden, but don't know when to plant?</h1>
    
-    <input type="text" class="zipcode" placeholder="Enter Your Zipcode">
+   <input type="text" class="zipcode" placeholder="Enter Your Zipcode"> 
     <br>
-    <button class="vegButton">List of Vegetables</button>
-    <div id="myDropdown" class="dropdown-content hide">
+   
 
-     ${plants.map(plant =>{ 
-        return `
+ 
+ 
+
         <section>
-       <p class="vegList">${plant.name}</p>
-        <input type="hidden" class="chosenVeg" value="${plant.id}">
-    </section>`
-    }
-    ).join("")
-    } 
-    </div>
+        <form method="post" action="/Tests/Post">  
+   
+    <legend>Plants to check</legend>  
+       <fieldset>
+     ${plants
+            .map((plant) => {
+                return `
+
+
+    <input type="checkbox" name="veg_select" value="${plant.name}" onclick="return ValidateVegSelection();">${plant.name}<br>  
+  
+        <br>  
+
+ 
+ `;
+            })
+            .join("")} 
+           </fieldset>  
+</form>
+    </section>
+    <input type="submit" value="Submit now">  
     <br>
     <img class="vegImg" src="img/veg.png">
-</div>
+
+    </div>
 </main>
     
     
-    `
+    `;
 }
