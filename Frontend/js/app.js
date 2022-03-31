@@ -20,55 +20,45 @@ function makeHomeView(){
 }
 
 function makeHomeViewFromJSON(plants){
-    containerEl.innerHTML = home(plants);
-    //bind function will go here
-    // const vegBtn = containerEl.querySelector(".vegButton");
-    // vegBtn.addEventListener("click", myFunction);
-    
+  containerEl.innerHTML = home(plants);
+  //bind function will go here
+  const checkBoxDivs = containerEl.querySelector(".veg_id");
+
+    const submit_button = document.querySelector(".submitButton");
+
+
+  submit_button.addEventListener("click", ValidateVegSelection);
+  console.log(plants.id);
 }
+   
 makeHomeView();
 
-// function myFunction() {
-//     const dropdown = document.getElementById("myDropdown");
-//     if (dropdown.classList.contains("hide")) {
-//         dropdown.classList.remove("hide");
-//         dropdown.classList.add("show");
-//     }
-//     else {
-//         dropdown.classList.remove("show");
-//         dropdown.classList.add("hide");
-//     }
 
 
-// }
-// window.onclick = function(event) {
-//     if (!event.target.matches('.vegButton')) {
-//       var dropdowns = document.getElementsByClassName("dropdown-content");
-//       var i;
-//       for (i = 0; i < dropdowns.length; i++) {
-//         var openDropdown = dropdowns[i];
-//         if (openDropdown.classList.contains('show')) {
-//           openDropdown.classList.remove('show');
-//           openDropdown.classList.add('hide');
-//         }
-//       }
-//     }
-//   }
+function ValidateVegSelection()  { 
 
-function ValidateVegSelection()  {  
-    var checkboxes = document.getElementsByName("veg_select");  
-    var numberOfCheckedItems = 0;  
-    for(var i = 0; i < checkboxes.length; i++)  
-    {  
-        if(checkboxes[i].checked)  
-            numberOfCheckedItems++;  
-    }  
-    if(numberOfCheckedItems > 2)  
-    {  
-        alert("You can't select more than two favorite pets!");  
-        return false;  
-    }  
+
+var array = [];
+var queryString = "";
+var checkboxes = document.querySelectorAll("input:checked");
+// console.log(checkboxes)
+for (var i = 0; i < checkboxes.length; i++) {
+  console.log(checkboxes[i].parentElement.querySelector(".veg_id").value);
+  array.push(checkboxes[i].parentElement.querySelector(".veg_id").value);
+  queryString +=
+    checkboxes[i].parentElement.querySelector(".veg_id").value + "," ;
+  // TRIM QUERYSTRING HERE AS STRETCH GOAL
+
+
+console.log(queryString);
+}
+console.log(queryString);
+console.log("stop reloading")
+window.location.href = "http://localhost:8080/plants?plantsIds="+queryString;
 }  
+
+
+
 
 
 
