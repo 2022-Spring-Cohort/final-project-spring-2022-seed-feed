@@ -9,3 +9,13 @@ GET https://api.farmsense.net/v1/frostdates/probabilities/?station=12813&season=
 
 ### Getting all recipes
 GET https://api.edamam.com/api/recipes/v2?type=public&q=strawberry&app_id=2762fe12&app_key=9a0f0246c250ede5b70c49d6ee4d1116
+
+
+###Returns All Plant info:
+GET http://localhost:8080/
+
+###
+GET  http://localhost:8080/plant/2
+
+###
+GET  http://localhost:8080/plants?plantsIds=1,2,5

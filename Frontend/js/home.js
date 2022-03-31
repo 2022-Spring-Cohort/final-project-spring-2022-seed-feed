@@ -12,27 +12,29 @@ export default function home(plants) {
  
 
         <section>
-        <form method="post" action="/Tests/Post">  
+       
    
     <legend>Plants to check</legend>  
        <fieldset>
      ${plants
-            .map((plant) => {
-                return `
+       .map((plant) => {
+         return `
 
-
-    <input type="checkbox" name="veg_select" value="${plant.name}" onclick="return ValidateVegSelection();">${plant.name}<br>  
-  
+<div class="checkbox_input">
+    <input type="checkbox" name="veg_select">
+    ${plant.name}<br>  
+  <input type="hidden" class="veg_id" value="${plant.id}">
         <br>  
-
+</div>
  
  `;
-            })
-            .join("")} 
-           </fieldset>  
-</form>
+       })
+       .join("")} 
+           </fieldset> 
+              <input type="submit" class="submitButton" value="Submit now">  
+
     </section>
-    <input type="submit" value="Submit now">  
+  
     <br>
     <img class="vegImg" src="img/veg.png">
 
@@ -42,3 +44,6 @@ export default function home(plants) {
     
     `;
 }
+
+
+
