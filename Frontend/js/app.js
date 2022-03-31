@@ -25,8 +25,6 @@ function makeHomeViewFromJSON(plants){
     const vegBtn = containerEl.querySelector(".vegButton");
     vegBtn.addEventListener("click", myFunction);
     
-
-
 }
 makeHomeView();
 
@@ -43,7 +41,19 @@ function myFunction() {
 
 
 }
-
+window.onclick = function(event) {
+    if (!event.target.matches('.vegButton')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+          openDropdown.classList.add('hide');
+        }
+      }
+    }
+  }
 
 
 
