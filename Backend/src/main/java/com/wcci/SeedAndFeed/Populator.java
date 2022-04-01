@@ -17,9 +17,9 @@ public class Populator implements CommandLineRunner {
 
         //Populator stuff starts here
 
-        Plant arugula = new Plant("Arugula", 33, "10-12", "Full", -21, "Backend/src/main/java/com/wcci/SeedAndFeed/images/arugula_photo.jpg");
-        Plant basil = new Plant("Basil", 33, "10-12", "Full", -49, "Backend/src/main/java/com/wcci/SeedAndFeed/images/basil_photo.jpg");
-        Plant edamame = new Plant("Edamame", 65, "24-30", "Full", -999, "Backend/src/main/java/com/wcci/SeedAndFeed/images/edamame_photo.jpg");
+        Plant arugula = new Plant("Arugula", 33, "10-12", "Full", -21, "./images/arugula_photo.jpg");
+        Plant basil = new Plant("Basil", 33, "10-12", "Full", -49, "images/basil_photo.jpg");
+        Plant edamame = new Plant("Edamame", 65, "24-30", "Full", -999, "/images/edamame_photo.jpg");
         Plant bush_beans = new Plant("Bush Beans", 55, "18-30", "Full", -999, "Backend/src/main/java/com/wcci/SeedAndFeed/images/bush_beans_photo.jpg");
         Plant beets = new Plant("Beets", 57, "10-12", "Full", -999, "Backend/src/main/java/com/wcci/SeedAndFeed/images/beets_photo.jpg");
         Plant broccoli = new Plant("Broccoli", 50, "30-36", "Full", -42, "Backend/src/main/java/com/wcci/SeedAndFeed/images/broccoli_photo.jpg");

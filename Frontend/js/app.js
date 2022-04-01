@@ -1,4 +1,6 @@
 import home from "./home.js";
+import selectedPlantsView from "./selectedPlantsView.js";
+
 
 
 
@@ -48,14 +50,18 @@ for (var i = 0; i < checkboxes.length; i++) {
   queryString +=
     checkboxes[i].parentElement.querySelector(".veg_id").value + "," ;
   // TRIM QUERYSTRING HERE AS STRETCH GOAL
-
-
-console.log(queryString);
 }
-console.log(queryString);
-console.log("stop reloading")
-window.location.href = "http://localhost:8080/plants?plantsIds="+queryString;
+
+fetch("http://localhost:8080/plants?plantsIds="+queryString) 
+.then(res => res.json())
+.then(plants =>{
+  makeSelectedPlantViewFromJson(plants);
+})
 }  
+function makeSelectedPlantViewFromJson(plants){
+containerEl.innerHTML = selectedPlantsView(plants);
+
+}
 
 
 
@@ -64,7 +70,7 @@ window.location.href = "http://localhost:8080/plants?plantsIds="+queryString;
 
 // *************************************************
 // **************************************************
-// THIS IS THE SINGLE PLANT VIEW SECTION:
+// THIS IS THE SELECTED PLANTS VIEW SECTION:
 // *************************************************
 
 
