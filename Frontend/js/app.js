@@ -1,5 +1,9 @@
 import home from "./home.js";
 import selectedPlantsView from "./selectedPlantsView.js";
+import header from "./header.js";
+import footer from "./footer.js";
+import allRecipesView from "./allRecipesView.js";
+
 
 
 
@@ -11,6 +15,7 @@ import selectedPlantsView from "./selectedPlantsView.js";
 // *************************************************
 const containerEl = document.querySelector(".container");
 function makeHomeView(){
+
     console.log("working");
     fetch("http://localhost:8080/")
     .then((res) => res.json())
@@ -22,20 +27,30 @@ function makeHomeView(){
 }
 
 function makeHomeViewFromJSON(plants){
-  containerEl.innerHTML = home(plants);
+  containerEl.innerHTML = header();
+  containerEl.innerHTML += home(plants);
+  containerEl.innerHTML += footer();
   //bind function will go here
   const checkBoxDivs = containerEl.querySelector(".veg_id");
 
-    const submit_button = document.querySelector(".submitButton");
-
-
+  //Submit button
+  const submit_button = document.querySelector(".submitButton");
   submit_button.addEventListener("click", ValidateVegSelection);
   console.log(plants.id);
+
+  // //All recipes button
+  const allRecButton = document.querySelector(".allRecipesButton");
+  allRecButton.addEventListener("click", makeAllRecipesView)
 }
    
 makeHomeView();
 
+// *************************************************
+// **************************************************
+// THIS IS THE SELECTED PLANTS VIEW SECTION:
+// *************************************************
 
+//Once the submit button is clicked on the homepage, the function below runs
 
 function ValidateVegSelection()  { 
 
@@ -63,15 +78,28 @@ containerEl.innerHTML = selectedPlantsView(plants);
 
 }
 
-
-
-
-
-
 // *************************************************
 // **************************************************
-// THIS IS THE SELECTED PLANTS VIEW SECTION:
+// THIS IS THE ALL RECIPE VIEW SECTION:
 // *************************************************
+  
+function makeAllRecipesView(plants){
+
+  fetch("http://localhost:8080/")
+  .then((res) => res.json())
+  .then((plants) => {
+      makeAllRecipesViewFromJson(plants);
+  })
+}
+function makeAllRecipesViewFromJson(plants){
+containerEl.innerHTML = header();
+containerEl.innerHTML += allRecipesView(plants);
+containerEl.innerHTML += footer();
+}
+
+
+
+
 
 
 
@@ -92,8 +120,5 @@ containerEl.innerHTML = selectedPlantsView(plants);
 
 
 
-// *************************************************
-// **************************************************
-// THIS IS THE ALL RECIPE VIEW SECTION:
-// *************************************************
+
 
