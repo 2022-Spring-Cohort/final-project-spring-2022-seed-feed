@@ -1,5 +1,5 @@
 ###Get latitude, longitude, and zone
-GET http://phzmapi.org/36526.json
+GET http://phzmapi.org/44111.json
 
 ###Getting the station id
 GET https://api.farmsense.net/v1/frostdates/stations/?lat=30.62&lon=-87.89
@@ -18,4 +18,4 @@ GET http://localhost:8080/
 GET  http://localhost:8080/plant/2
 
 ###
-GET  http://localhost:8080/plants?plantsIds=1,2,5
+GET  http://localhost:8080/plants?plantsIds=1,2,5,30,
