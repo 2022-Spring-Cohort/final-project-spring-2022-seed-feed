@@ -26,3 +26,17 @@
 .hide {
     display: none;
 }
+
+/* Selected Plants View CSS below */
+.plantPhoto{
+    height: 10em;
+}
+
+.bannerImage{
+    height: 15em;
+    
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}

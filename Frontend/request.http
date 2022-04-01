@@ -8,7 +8,7 @@ GET https://api.farmsense.net/v1/frostdates/stations/?lat=30.62&lon=-87.89
 GET https://api.farmsense.net/v1/frostdates/probabilities/?station=12813&season=1
 
 ### Getting all recipes
-GET https://api.edamam.com/api/recipes/v2?type=public&q=strawberry&app_id=2762fe12&app_key=9a0f0246c250ede5b70c49d6ee4d1116
+GET https://api.edamam.com/api/recipes/v2?type=public&q=lettuce&app_id=2762fe12&app_key=9a0f0246c250ede5b70c49d6ee4d1116
 
 
 ###Returns All Plant info:
