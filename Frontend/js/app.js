@@ -13,7 +13,7 @@ import allRecipesView from "./allRecipesView.js";
 // THE FUNCTION " findFrostDateFromZipCode " IS RUN IN  makeHomeViewFromJSON
 //***************************************************************
 
-function findFrostDateFromZipCode() {
+function findFrostDateFromZipCode(plants) {
   const zipNumb = document.querySelector(".zipcode");
   console.log(zipNumb.value);
   fetch(`https://phzmapi.org/${zipNumb.value}.json`
@@ -42,7 +42,7 @@ function findFrostDateFromZipCode() {
               let fdate = frostDateNumb[0].prob_50;
               console.log("F-DATE NEXT")
               console.log(fdate);
-
+              makeSelectedPlantViewFromJson(plants, fdate);
             });
         });
     })
@@ -102,7 +102,7 @@ function ValidateVegSelection()  {
 var array = [];
 var queryString = "";
 var checkboxes = document.querySelectorAll("input:checked");
-// console.log(checkboxes)
+
 for (var i = 0; i < checkboxes.length; i++) {
   console.log(checkboxes[i].parentElement.querySelector(".veg_id").value);
   array.push(checkboxes[i].parentElement.querySelector(".veg_id").value);
@@ -114,11 +114,14 @@ for (var i = 0; i < checkboxes.length; i++) {
 fetch("http://localhost:8080/plants?plantsIds="+queryString) 
 .then(res => res.json())
 .then(plants =>{
-  makeSelectedPlantViewFromJson(plants);
+
+  findFrostDateFromZipCode(plants);
+
 })
 }  
-function makeSelectedPlantViewFromJson(plants){
-containerEl.innerHTML = selectedPlantsView(plants);
+
+function makeSelectedPlantViewFromJson(plants, fdate){
+containerEl.innerHTML = selectedPlantsView(plants, fdate);
 
 }
 
