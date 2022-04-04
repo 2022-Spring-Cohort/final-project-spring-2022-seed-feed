@@ -1,9 +1,8 @@
-export default function singlePlantRecipeView(plants, recipeName){
+export default function singlePlantRecipeView(recipes){
 return`
-${plants.map(plant => {
+${recipes.hits.map(hit => {
     return`
-<h1>${plant.name}</h1>
-<h2>${plant.recipeName}</h2>
+<h1>${hit.recipe.label}</h1>
 `
 }).join("")
 }

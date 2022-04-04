@@ -124,12 +124,19 @@ fetch("http://localhost:8080/plants?plantsIds="+queryString)
 function makeSelectedPlantViewFromJson(plants, fdate, recipeName){
 containerEl.innerHTML = selectedPlantsView(plants, fdate, recipeName);
 
-const recipeButton = document.querySelector(".clickForRecipeButton");
-recipeButton.addEventListener("click", ()=>{
-//  makeSinglePlantRecipeViewFromJson(plants, recipeName);
-makeSinglePlantRecipeView(plants);
-})
+const plantDivs = document.querySelectorAll(".singlePlant");
+plantDivs.forEach(plantDiv => {
+  const plantIdInput = plantDiv.querySelector(".plantId");
+  plants.forEach(plant =>{
+    if(plantIdInput.value == plant.id){
+      const recipeButton = plantDiv.querySelector(".clickForRecipeButton");
+      recipeButton.addEventListener("click", ()=>{
+      makeSinglePlantRecipeView(plant);
+      })
+    }
+  })
 
+})
 
 }
 
@@ -158,21 +165,19 @@ containerEl.innerHTML += footer();
 // THIS IS THE SINGLE PLANT RECIPES VIEW SECTION:
 // *************************************************
 //need tpo change makeSinglePlantRecipeView to take in just "plant"
-function makeSinglePlantRecipeView(plants){
+function makeSinglePlantRecipeView(plant){
   console.log("this is working");
   fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${plant.name}&app_id=2762fe12&app_key=9a0f0246c250ede5b70c49d6ee4d1116`)
 .then(res =>res.json())
-.then(recipeJson =>{
-console.log(recipeJson);
-  let recipeName = recipeJson[0].recipe.label;
-
+.then(recipes =>{
+console.log(recipes);
   //This should take in plant name and list of recipe JSON
-  makeSinglePlantRecipeViewFromJson(plants, recipeName);
+  makeSinglePlantRecipeViewFromJson(recipes);
 })
 }
-function makeSinglePlantRecipeViewFromJson(plants, recipeName){
+function makeSinglePlantRecipeViewFromJson(recipes){
   containerEl.innerHTML = header();
-  containerEl.innerHTML += singlePlantRecipeView(plants, recipeName);
+  containerEl.innerHTML += singlePlantRecipeView(recipes);
   containerEl.innerHTML += footer();
 
 }
