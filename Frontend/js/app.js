@@ -78,8 +78,9 @@ function makeHomeViewFromJSON(plants){
   const submit_button = document.querySelector(".submitButton");
   submit_button.addEventListener("click", ValidateVegSelection);
 
-  const zipSubBtn = containerEl.querySelector(".zipSubmitButton");
-  zipSubBtn.addEventListener("click", findFrostDateFromZipCode);
+  // Deleted this section because submit button already does this function.
+  // const zipSubBtn = containerEl.querySelector(".zipSubmitButton");
+  // zipSubBtn.addEventListener("click", findFrostDateFromZipCode);
 
   console.log(plants.id);
 
@@ -98,8 +99,6 @@ makeHomeView();
 //Once the submit button is clicked on the homepage, the function below runs
 
 function ValidateVegSelection()  { 
-
-
 var array = [];
 var queryString = "";
 var checkboxes = document.querySelectorAll("input:checked");
@@ -121,8 +120,10 @@ fetch("http://localhost:8080/plants?plantsIds="+queryString)
 })
 }  
 
-function makeSelectedPlantViewFromJson(plants, fdate, recipeName){
-containerEl.innerHTML = selectedPlantsView(plants, fdate, recipeName);
+function makeSelectedPlantViewFromJson(plants, fdate){
+  containerEl.innerHTML = header();
+  containerEl.innerHTML += selectedPlantsView(plants, fdate);
+  containerEl.innerHTML += footer();
 
 const plantDivs = document.querySelectorAll(".singlePlant");
 plantDivs.forEach(plantDiv => {
@@ -157,6 +158,20 @@ function makeAllRecipesViewFromJson(plants){
 containerEl.innerHTML = header();
 containerEl.innerHTML += allRecipesView(plants);
 containerEl.innerHTML += footer();
+
+
+  const allRecDivs = document.querySelectorAll(".allRecDiv");
+  allRecDivs.forEach(allRecDiv => {
+    const plantRecIdInput = allRecDiv.querySelector(".plantRecId");
+    plants.forEach(plant =>{
+      if(plantRecIdInput.value == plant.id){
+        const singleRecBtn = document.querySelectorAll(".plantPhoto");
+        singleRecBtn.addEventListener("click", () => {
+        makeSinglePlantRecipeView(plant);
+        })
+      }
+    })
+})
 }
 
 
