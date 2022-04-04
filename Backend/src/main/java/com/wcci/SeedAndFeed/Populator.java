@@ -20,7 +20,7 @@ public class Populator implements CommandLineRunner {
         Plant arugula = new Plant("Arugula", 33, "10-12", "Full", -21, "./img/arugula_photo.jpg");
         Plant basil = new Plant("Basil", 33, "10-12", "Full", -49, "./img/basil_photo.jpg");
         Plant edamame = new Plant("Edamame", 65, "24-30", "Full", -999, "./img/edamame_photo.jpg");
-        Plant bush_beans = new Plant("Bush Beans", 55, "18-30", "Full", -999, "./img/bush_beans_photo.jpg");
+        Plant green_beans = new Plant("Green Beans", 55, "18-30", "Full", -999, "./img/bush_beans_photo.jpg");
         Plant beets = new Plant("Beets", 57, "10-12", "Full", -999, "./img/beets_photo.jpg");
         Plant broccoli = new Plant("Broccoli", 50, "30-36", "Full", -42, "./img/broccoli_photo.jpg");
         Plant brussels_sprouts = new Plant("Brussels Sprouts", 90, "34-36", "Full", -70, "./img/brussels_sprouts_photo.jpg");
@@ -69,7 +69,7 @@ public class Populator implements CommandLineRunner {
         plantRepo.save(arugula);
         plantRepo.save(basil);
         plantRepo.save(edamame);
-        plantRepo.save(bush_beans);
+        plantRepo.save(green_beans);
         plantRepo.save(beets);
         plantRepo.save(broccoli);
         plantRepo.save(brussels_sprouts);

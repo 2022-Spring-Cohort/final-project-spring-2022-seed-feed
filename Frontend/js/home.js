@@ -6,7 +6,7 @@ export default function home(plants) {
    
     <div class="zipcodeSection">
    <input type="text" class="zipcode" placeholder="Enter Your Zipcode"> 
-   <button class="zipSubmitButton">subZIP</button>
+
     <br>
    </div>
 
@@ -46,6 +46,8 @@ export default function home(plants) {
     
     `;
 }
+
+//   <button class="zipSubmitButton">subZIP</button> Line 9
 
 
 

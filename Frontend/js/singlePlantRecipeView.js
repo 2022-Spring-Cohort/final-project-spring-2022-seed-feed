@@ -1,13 +1,17 @@
-export default function singlePlantRecipeView(plants, recipeName){
+export default function singlePlantRecipeView(recipes){
 return`
-${plants.map(plant => {
+${recipes.hits.map(hit => {
     return`
-<h1>${plant.name}</h1>
-<h2>${plant.recipeName}</h2>
-`
+    <div class="singleRecipeDiv">
+<h1>${hit.recipe.label}</h1>
+<a href="${hit.recipe.url}">
+<img class="recipeImage" src="${hit.recipe.images.SMALL.url}"></a>
+</div>`
 }).join("")
 }
 
 `
 
 }
+
+//Possibly add plant recipes back in here at the top. Need to pass in a plant.
