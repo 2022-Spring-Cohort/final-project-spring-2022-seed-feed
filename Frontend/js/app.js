@@ -180,6 +180,11 @@ function makeSinglePlantRecipeViewFromJson(recipes){
   containerEl.innerHTML += singlePlantRecipeView(recipes);
   containerEl.innerHTML += footer();
 
+  const recipeImgBtn = document.querySelectorAll(".recipeImage");
+  recipeImgBtn.addEventListener("click", () => {
+    
+  })
+
 }
 
 
