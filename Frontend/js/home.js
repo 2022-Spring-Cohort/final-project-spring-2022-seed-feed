@@ -4,9 +4,11 @@ export default function home(plants) {
     <div class="mainSection">
     <h1>Want to start a garden, but don't know when to plant?</h1>
    
+    <div class="zipcodeSection">
    <input type="text" class="zipcode" placeholder="Enter Your Zipcode"> 
+   <button class="zipSubmitButton">subZIP</button>
     <br>
-   
+   </div>
 
  
  
