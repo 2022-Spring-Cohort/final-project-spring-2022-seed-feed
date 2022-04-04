@@ -11,7 +11,7 @@ return `
 <h3 class="height"> Height: ${plant.height}</h3>
 <h3 class="sun"> Sun exposure: ${plant.sunExposure}</h3>
 <h3 class="indoorStart"> Indoor start date: ${plant.indoorCalc}</h3>
-<button>Click for ${plant.name} recipes </button>
+<button class ="clickForRecipeButton">Click for ${plant.name} recipes </button>
 <h1>"This is the Frost Date 50 percentile " + ${fdate}</h1>
 </div>`;
 }).join("")
