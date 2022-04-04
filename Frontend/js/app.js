@@ -16,6 +16,7 @@ import singlePlantRecipeView from "./singlePlantRecipeView.js";
 
 function findFrostDateFromZipCode(plants) {
   const zipNumb = document.querySelector(".zipcode");
+  const indoorCalcEl = document.querySelector(".indoorStart")
   console.log(zipNumb.value);
   fetch(`https://phzmapi.org/${zipNumb.value}.json`
   )
@@ -43,7 +44,14 @@ function findFrostDateFromZipCode(plants) {
               let fdate = frostDateNumb[0].prob_50;
               console.log("F-DATE NEXT")
               console.log(fdate);
-              makeSelectedPlantViewFromJson(plants, fdate);
+
+              let date = dateConverter(fdate);
+              let indoorDateStart = new Date(date);
+       
+             
+              makeSelectedPlantViewFromJson(plants, indoorDateStart);
+
+
             });
         });
     })
@@ -51,7 +59,16 @@ function findFrostDateFromZipCode(plants) {
 }
 // -----------------------------------------------------------------------------
 // ***************************************************************
-
+function dateConverter(fdate) {
+console.log(fdate);
+                let fdateMonth = fdate.substring(0, 2);
+                console.log(fdateMonth);
+                let fdateDay = fdate.substring(2);
+                console.log(fdateDay);
+                let today = new Date()
+                const d = new Date(today.getFullYear(), fdateMonth - 1, fdateDay);
+                  return d;
+}
 
 // *************************************************
 // **************************************************
@@ -99,6 +116,9 @@ makeHomeView();
 //Once the submit button is clicked on the homepage, the function below runs
 
 function ValidateVegSelection()  { 
+
+
+
 var array = [];
 var queryString = "";
 var checkboxes = document.querySelectorAll("input:checked");
@@ -120,10 +140,11 @@ fetch("http://localhost:8080/plants?plantsIds="+queryString)
 })
 }  
 
-function makeSelectedPlantViewFromJson(plants, fdate){
+function makeSelectedPlantViewFromJson(plants, date){
   containerEl.innerHTML = header();
-  containerEl.innerHTML += selectedPlantsView(plants, fdate);
+  containerEl.innerHTML += selectedPlantsView(plants, date);
   containerEl.innerHTML += footer();
+
 
 const plantDivs = document.querySelectorAll(".singlePlant");
 plantDivs.forEach(plantDiv => {
