@@ -186,7 +186,7 @@ containerEl.innerHTML += footer();
     const plantRecIdInput = allRecDiv.querySelector(".plantRecId");
     plants.forEach(plant =>{
       if(plantRecIdInput.value == plant.id){
-        const singleRecBtn = document.querySelectorAll(".plantPhoto");
+        const singleRecBtn = allRecDiv.querySelector(".plantPhoto");
         singleRecBtn.addEventListener("click", () => {
         makeSinglePlantRecipeView(plant);
         })
