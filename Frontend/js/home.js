@@ -1,11 +1,11 @@
 export default function home(plants) {
-    return `
+  return `
     <main class="mainContent">
     <div class="mainSection">
     <h1>Want to start a garden, but don't know when to plant?</h1>
    
     <div class="zipcodeSection">
-   <input type="text" class="zipcode" placeholder="Enter Your Zipcode"> 
+   <input type="text" maxlength="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\/g, '$1');" class="zipcode" placeholder="Enter Your Zipcode"> 
 
     <br>
    </div>
@@ -33,6 +33,7 @@ export default function home(plants) {
        })
        .join("")} 
            </fieldset> 
+           
               <input type="submit" class="submitButton" value="Submit now">  
 
     </section>
@@ -48,6 +49,3 @@ export default function home(plants) {
 }
 
 //   <button class="zipSubmitButton">subZIP</button> Line 9
-
-
-

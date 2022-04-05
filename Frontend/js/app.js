@@ -33,7 +33,7 @@ function findFrostDateFromZipCode(plants) {
         .then((res) => res.json())
         .then((stationID) => {
           stationID;
-
+let stationName = stationID[0].name;
           fetch(
             `https://api.farmsense.net/v1/frostdates/probabilities/?station=${stationID[0].id}&season=1`
           )
@@ -44,12 +44,12 @@ function findFrostDateFromZipCode(plants) {
               let fdate = frostDateNumb[0].prob_50;
               console.log("F-DATE NEXT")
               console.log(fdate);
-
+              
               let date = dateConverter(fdate);
               let indoorDateStart = new Date(date);
        
              
-              makeSelectedPlantViewFromJson(plants, indoorDateStart);
+              makeSelectedPlantViewFromJson(plants, indoorDateStart, stationName);
 
 
             });
@@ -140,9 +140,9 @@ fetch("http://localhost:8080/plants?plantsIds="+queryString)
 })
 }  
 
-function makeSelectedPlantViewFromJson(plants, date){
+function makeSelectedPlantViewFromJson(plants, date, stationName){
   containerEl.innerHTML = header();
-  containerEl.innerHTML += selectedPlantsView(plants, date);
+  containerEl.innerHTML += selectedPlantsView(plants, date, stationName);
   containerEl.innerHTML += footer();
 
 

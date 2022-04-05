@@ -1,9 +1,10 @@
-export default function selectedPlantsView(plants, d){
+export default function selectedPlantsView(plants, d, stationName){
     console.log(plants + d);
     const lengthOfDay = (24 * 60 * 60 * 1000);
 return `
 <div class="plantInfo">
 <h1>This is the Frost Date 50 percentile  + ${d.toDateString()}</h1>
+<h2>Nearest Reporting Weather Station: ${stationName}
 ${plants
   .map((plant) => {
     return `
@@ -25,9 +26,9 @@ ${plants
       d.getTime() + plant.indoorCalc * lengthOfDay
     ).toDateString()}</h1>
 </div>`;
-}).join("")
-}
-</div>`
+  })
+  .join("")}
+</div>`;
 
 
 }
