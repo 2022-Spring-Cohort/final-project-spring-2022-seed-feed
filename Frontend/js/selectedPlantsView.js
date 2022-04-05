@@ -2,6 +2,7 @@ export default function selectedPlantsView(plants, d, stationName){
     console.log(plants + d);
     const lengthOfDay = (24 * 60 * 60 * 1000);
 return `
+<button class ="backBtn">Back Button</button>
 <div class="plantInfo">
 <h1>This is the Frost Date 50 percentile  + ${d.toDateString()}</h1>
 <h2>Nearest Reporting Weather Station: ${stationName}

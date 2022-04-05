@@ -8,7 +8,7 @@ return`
 </header>
 <nav>
 <ul class="navList">
-   <li>Home</li>
+   <li class ="homeBtn">Home</li>
    <li class="allRecipesButton">Recipes</li>
    <li>About</li>
 </ul>    
