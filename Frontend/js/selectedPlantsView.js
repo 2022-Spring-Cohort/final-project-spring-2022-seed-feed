@@ -1,4 +1,5 @@
 import indoorStartFrag from "./indoorStartFrag.js";
+import calendarButton from "./calendarButton.js";
 
 export default function selectedPlantsView(plants, d, stationName){
     console.log(plants + d);
@@ -24,6 +25,7 @@ ${plants
 
 <button class ="clickForRecipeButton">Click for ${plant.name} recipes </button>
 <h1>${indoorStartFrag(plant, d)}</h1>
+
 
 </div>`;
   })

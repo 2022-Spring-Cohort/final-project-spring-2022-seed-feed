@@ -18,12 +18,15 @@ function findFrostDateFromZipCode(plants) {
   const zipNumb = document.querySelector(".zipcode");
   const indoorCalcEl = document.querySelector(".indoorStart")
   console.log(zipNumb.value);
-  fetch(`https://phzmapi.org/${zipNumb.value}.json`
-  )
+  fetch(`https://phzmapi.org/${zipNumb.value}.json`)
     .then((res) => {
       console.log(res);
+      if (res.status == "404") {
+        alert("Invalid zip");
+      }
       return res.json();
     })
+    
     .then((zipDetails) => {
       console.log(zipDetails);
 
@@ -129,10 +132,10 @@ try {
       checkboxes[i].parentElement.querySelector(".veg_id").value + "," ;
   } 
 }
-// catch(error) {
-//   window.alert("Zip code invalid. Please enter a valid zip code.");
-// }
-finally {alert("Zip code invalid. Please enter a valid zip code.");}
+catch {
+  alert("Zip code invalid. Please enter a valid zip code.");
+}
+// throw alert("Zip code invalid. Please enter a valid zip code.");
 
 
 
