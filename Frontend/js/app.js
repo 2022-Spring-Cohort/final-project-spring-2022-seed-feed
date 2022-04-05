@@ -4,6 +4,8 @@ import header from "./header.js";
 import footer from "./footer.js";
 import allRecipesView from "./allRecipesView.js";
 import singlePlantRecipeView from "./singlePlantRecipeView.js";
+// import atcb_init from "./atcb/atcb.js";
+
 
 
 
@@ -157,6 +159,7 @@ function makeSelectedPlantViewFromJson(plants, date, stationName){
   containerEl.innerHTML = header();
   containerEl.innerHTML += selectedPlantsView(plants, date, stationName);
   containerEl.innerHTML += footer();
+  atcb_init();
 
 
 const plantDivs = document.querySelectorAll(".singlePlant");

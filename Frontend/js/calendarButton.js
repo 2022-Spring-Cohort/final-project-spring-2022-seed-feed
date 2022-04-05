@@ -1,9 +1,9 @@
-export default function calendarButton() {
+export default function calendarButton(plantDate) {
     return `<div class="atcb" style="display:none;">
     {
         "name":"Add the title of your event",
         "description":"A nice description does not hurt",
-        "startDate":"2022-02-21",
+        "startDate":"${plantDate}",
         "endDate":"2022-03-24",
         "startTime":"10:13",
         "endTime":"17:57",
