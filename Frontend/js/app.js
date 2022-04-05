@@ -117,19 +117,29 @@ makeHomeView();
 
 function ValidateVegSelection()  { 
 
-
-
-var array = [];
-var queryString = "";
-var checkboxes = document.querySelectorAll("input:checked");
-
-for (var i = 0; i < checkboxes.length; i++) {
-  console.log(checkboxes[i].parentElement.querySelector(".veg_id").value);
-  array.push(checkboxes[i].parentElement.querySelector(".veg_id").value);
-  queryString +=
-    checkboxes[i].parentElement.querySelector(".veg_id").value + "," ;
-  // TRIM QUERYSTRING HERE AS STRETCH GOAL
+try {
+  var array = [];
+  var queryString = "";
+  var checkboxes = document.querySelectorAll("input:checked");
+  
+  for (var i = 0; i < checkboxes.length; i++) {
+    console.log(checkboxes[i].parentElement.querySelector(".veg_id").value);
+    array.push(checkboxes[i].parentElement.querySelector(".veg_id").value);
+    queryString +=
+      checkboxes[i].parentElement.querySelector(".veg_id").value + "," ;
+  } 
 }
+// catch(error) {
+//   window.alert("Zip code invalid. Please enter a valid zip code.");
+// }
+finally {alert("Zip code invalid. Please enter a valid zip code.");}
+
+
+
+
+
+  // TRIM QUERYSTRING HERE AS STRETCH GOAL
+
 
 fetch("http://localhost:8080/plants?plantsIds="+queryString) 
 .then(res => res.json())
