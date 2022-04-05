@@ -179,6 +179,9 @@ backButton.addEventListener("click", ()=>{
   
 })
 
+const allRecButton = document.querySelector(".allRecipesButton");
+allRecButton.addEventListener("click", makeAllRecipesView);
+
 }
 
 // *************************************************
@@ -217,6 +220,12 @@ homeButton.addEventListener("click",()=>{
 makeHomeView();
 })
 
+const backButton = document.querySelector(".backBtn");
+backButton.addEventListener("click", ()=>{
+  makeHomeView();
+  
+})
+
 }
 
 
@@ -247,6 +256,9 @@ homeButton.addEventListener("click",()=>{
 makeHomeView();
 })
 
+const allRecButton = document.querySelector(".allRecipesButton");
+allRecButton.addEventListener("click", makeAllRecipesView);
+
 const backButton = document.querySelector(".backBtn");
 backButton.addEventListener("click", ()=>{
   if(recipeViewSelected){
@@ -261,6 +273,7 @@ backButton.addEventListener("click", ()=>{
   recipeImgBtn.addEventListener("click", () => {
     
   })
+
 
 
 
