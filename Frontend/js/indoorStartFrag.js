@@ -1,13 +1,16 @@
-export default function indoorStartFrag(plant, d, plantDate) {
+export default function indoorStartFrag(plant, d) {
 
     const lengthOfDay = (24 * 60 * 60 * 1000);
 
     if (plant.indoorCalc == -999) {
+        //WHEN CHANGING THIS STRING, CHANGE STRING ON calendarButton.js LINE 4
         return "Don't plant this inside!"
     }
-    else { return plantDate = new Date(
-        d.getTime() + plant.indoorCalc * lengthOfDay
-      ).toDateString();
+    else { 
+        return new Date(d.getTime() + plant.indoorCalc * lengthOfDay);
+        // .toISOString().slice(0, 10);
+        // .toDateString();
+
     // calendarButton();
     };
     
