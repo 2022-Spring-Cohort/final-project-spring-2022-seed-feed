@@ -20,10 +20,12 @@ let recipeViewSelected = false;
 
 function findFrostDateFromZipCode(plants) {
  
-  fetch(`https://phzmapi.org/${zipNumber}.json`
-  )
+  fetch(`https://phzmapi.org/${zipNumber}.json`)
     .then((res) => {
       console.log(res);
+      if (res.status == "404") {
+        alert("Invalid zip");
+      }
       return res.json();
     })
     .then((zipDetails) => {
@@ -35,7 +37,7 @@ function findFrostDateFromZipCode(plants) {
         .then((res) => res.json())
         .then((stationID) => {
           stationID;
-let stationName = stationID[0].name;
+          let stationName = stationID[0].name;
           fetch(
             `https://api.farmsense.net/v1/frostdates/probabilities/?station=${stationID[0].id}&season=1`
           )
@@ -44,16 +46,17 @@ let stationName = stationID[0].name;
               frostDateNumb[0].prob_50;
               console.log(frostDateNumb[0].prob_50);
               let fdate = frostDateNumb[0].prob_50;
-              console.log("F-DATE NEXT")
+              console.log("F-DATE NEXT");
               console.log(fdate);
-              
+
               let date = dateConverter(fdate);
               let indoorDateStart = new Date(date);
-       
-             
-              makeSelectedPlantViewFromJson(plants, indoorDateStart, stationName);
 
-
+              makeSelectedPlantViewFromJson(
+                plants,
+                indoorDateStart,
+                stationName
+              );
             });
         });
     })
