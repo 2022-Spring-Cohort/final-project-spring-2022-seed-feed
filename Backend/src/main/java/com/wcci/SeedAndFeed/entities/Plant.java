@@ -16,15 +16,17 @@ public class Plant {
     private String sunExposure;
     private int indoorCalc;
     private String photoLink;
+    private String careTips;
 
 
-    public Plant(String name, int maturityDays, String height, String sunExposure, int indoorCalc, String photoLink) {
+    public Plant(String name, int maturityDays, String height, String sunExposure, int indoorCalc, String photoLink, String careTips) {
         this.name = name;
         this.maturityDays = maturityDays;
         this.height = height;
         this.sunExposure = sunExposure;
         this.indoorCalc = indoorCalc;
         this.photoLink = photoLink;
+        this.careTips = careTips;
     }
 
     public long getId() {
@@ -56,5 +58,9 @@ public class Plant {
     }
 
     public Plant(){
+    }
+
+    public String getCareTips() {
+        return careTips;
     }
 }
