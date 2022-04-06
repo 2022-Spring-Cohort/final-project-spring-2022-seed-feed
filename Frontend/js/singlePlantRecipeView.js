@@ -1,5 +1,6 @@
 export default function singlePlantRecipeView(recipes){
 return`
+<button class ="backBtn">Back Button</button>
 ${recipes.hits.map(hit => {
     return`
     <div class="singleRecipeDiv">

@@ -4,9 +4,13 @@ import header from "./header.js";
 import footer from "./footer.js";
 import allRecipesView from "./allRecipesView.js";
 import singlePlantRecipeView from "./singlePlantRecipeView.js";
+// import atcb_init from "./atcb/atcb.js";
 
+let selectedPlants;
+let zipNumber = "";
 
-
+//The below represents it being selected from the nav bar:
+let recipeViewSelected = false;
 // ***************************************************************
 // ***************************************************************
 // THIS IS THE SECTION on HOW TO TAKE ZIPCODE TO FROSTDATE:
@@ -15,13 +19,13 @@ import singlePlantRecipeView from "./singlePlantRecipeView.js";
 //***************************************************************
 
 function findFrostDateFromZipCode(plants) {
-  const zipNumb = document.querySelector(".zipcode");
-  const indoorCalcEl = document.querySelector(".indoorStart")
-  console.log(zipNumb.value);
-  fetch(`https://phzmapi.org/${zipNumb.value}.json`
-  )
+ 
+  fetch(`https://phzmapi.org/${zipNumber}.json`)
     .then((res) => {
       console.log(res);
+      if (res.status == "404") {
+        alert("Invalid zip");
+      }
       return res.json();
     })
     .then((zipDetails) => {
@@ -33,7 +37,7 @@ function findFrostDateFromZipCode(plants) {
         .then((res) => res.json())
         .then((stationID) => {
           stationID;
-let stationName = stationID[0].name;
+          let stationName = stationID[0].name;
           fetch(
             `https://api.farmsense.net/v1/frostdates/probabilities/?station=${stationID[0].id}&season=1`
           )
@@ -42,16 +46,17 @@ let stationName = stationID[0].name;
               frostDateNumb[0].prob_50;
               console.log(frostDateNumb[0].prob_50);
               let fdate = frostDateNumb[0].prob_50;
-              console.log("F-DATE NEXT")
+              console.log("F-DATE NEXT");
               console.log(fdate);
-              
+
               let date = dateConverter(fdate);
               let indoorDateStart = new Date(date);
-       
-             
-              makeSelectedPlantViewFromJson(plants, indoorDateStart, stationName);
 
-
+              makeSelectedPlantViewFromJson(
+                plants,
+                indoorDateStart,
+                stationName
+              );
             });
         });
     })
@@ -85,11 +90,14 @@ function makeHomeView() {
 }
 
 function makeHomeViewFromJSON(plants){
+  recipeViewSelected = false;
   containerEl.innerHTML = header();
   containerEl.innerHTML += home(plants);
   containerEl.innerHTML += footer();
   //bind function will go here
   const checkBoxDivs = containerEl.querySelector(".veg_id");
+  const zipNumb = document.querySelector(".zipcode");
+  zipNumb.value = zipNumber;
 
   //Submit button
   const submit_button = document.querySelector(".submitButton");
@@ -134,6 +142,9 @@ for (var i = 0; i < checkboxes.length; i++) {
 fetch("http://localhost:8080/plants?plantsIds="+queryString) 
 .then(res => res.json())
 .then(plants =>{
+selectedPlants = plants;
+const zipNumb = document.querySelector(".zipcode");
+zipNumber = zipNumb.value;
 
   findFrostDateFromZipCode(plants);
 
@@ -141,10 +152,16 @@ fetch("http://localhost:8080/plants?plantsIds="+queryString)
 }  
 
 function makeSelectedPlantViewFromJson(plants, date, stationName){
+  recipeViewSelected = false;
   containerEl.innerHTML = header();
   containerEl.innerHTML += selectedPlantsView(plants, date, stationName);
   containerEl.innerHTML += footer();
+  atcb_init();
 
+  const homeButton = document.querySelector(".homeBtn");
+  homeButton.addEventListener("click",()=>{
+  makeHomeView();
+  })
 
 const plantDivs = document.querySelectorAll(".singlePlant");
 plantDivs.forEach(plantDiv => {
@@ -160,6 +177,15 @@ plantDivs.forEach(plantDiv => {
 
 })
 
+const backButton = document.querySelector(".backBtn");
+backButton.addEventListener("click", ()=>{
+  makeHomeView();
+  
+})
+
+const allRecButton = document.querySelector(".allRecipesButton");
+allRecButton.addEventListener("click", makeAllRecipesView);
+
 }
 
 // *************************************************
@@ -167,8 +193,8 @@ plantDivs.forEach(plantDiv => {
 // THIS IS THE ALL RECIPE VIEW SECTION:
 // *************************************************
   
-function makeAllRecipesView(plants){
-
+function makeAllRecipesView(){
+recipeViewSelected = true;
   fetch("http://localhost:8080/")
   .then((res) => res.json())
   .then((plants) => {
@@ -186,13 +212,24 @@ containerEl.innerHTML += footer();
     const plantRecIdInput = allRecDiv.querySelector(".plantRecId");
     plants.forEach(plant =>{
       if(plantRecIdInput.value == plant.id){
-        const singleRecBtn = document.querySelectorAll(".plantPhoto");
+        const singleRecBtn = allRecDiv.querySelector(".plantPhoto");
         singleRecBtn.addEventListener("click", () => {
         makeSinglePlantRecipeView(plant);
         })
       }
     })
 })
+const homeButton = document.querySelector(".homeBtn");
+homeButton.addEventListener("click",()=>{
+makeHomeView();
+})
+
+const backButton = document.querySelector(".backBtn");
+backButton.addEventListener("click", ()=>{
+  makeHomeView();
+  
+})
+
 }
 
 
@@ -210,16 +247,39 @@ console.log(recipes);
   //This should take in plant name and list of recipe JSON
   makeSinglePlantRecipeViewFromJson(recipes);
 })
+
+
 }
 function makeSinglePlantRecipeViewFromJson(recipes){
   containerEl.innerHTML = header();
   containerEl.innerHTML += singlePlantRecipeView(recipes);
   containerEl.innerHTML += footer();
 
+  const homeButton = document.querySelector(".homeBtn");
+homeButton.addEventListener("click",()=>{
+makeHomeView();
+})
+
+const allRecButton = document.querySelector(".allRecipesButton");
+allRecButton.addEventListener("click", makeAllRecipesView);
+
+const backButton = document.querySelector(".backBtn");
+backButton.addEventListener("click", ()=>{
+  if(recipeViewSelected){
+    makeAllRecipesView();
+  }
+  else{
+  findFrostDateFromZipCode(selectedPlants);
+  }
+})
+
   const recipeImgBtn = document.querySelectorAll(".recipeImage");
   recipeImgBtn.addEventListener("click", () => {
     
   })
+
+
+
 
 }
 
