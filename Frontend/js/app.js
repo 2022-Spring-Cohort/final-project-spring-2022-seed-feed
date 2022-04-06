@@ -111,7 +111,9 @@ function makeHomeViewFromJSON(plants){
 
   // //All recipes button
   const allRecButton = document.querySelector(".allRecipesButton");
-  allRecButton.addEventListener("click", makeAllRecipesView)
+  allRecButton.addEventListener("click", makeAllRecipesView);
+
+  makeAboutModal();
 }
 
 makeHomeView();
@@ -161,6 +163,7 @@ function makeSelectedPlantViewFromJson(plants, date, stationName){
   const homeButton = document.querySelector(".homeBtn");
   homeButton.addEventListener("click",()=>{
   makeHomeView();
+
   })
 
 const plantDivs = document.querySelectorAll(".singlePlant");
@@ -180,12 +183,12 @@ plantDivs.forEach(plantDiv => {
 const backButton = document.querySelector(".backBtn");
 backButton.addEventListener("click", ()=>{
   makeHomeView();
-  
 })
 
 const allRecButton = document.querySelector(".allRecipesButton");
 allRecButton.addEventListener("click", makeAllRecipesView);
 
+makeAboutModal();
 }
 
 // *************************************************
@@ -223,13 +226,11 @@ const homeButton = document.querySelector(".homeBtn");
 homeButton.addEventListener("click",()=>{
 makeHomeView();
 })
-
 const backButton = document.querySelector(".backBtn");
 backButton.addEventListener("click", ()=>{
   makeHomeView();
-  
 })
-
+makeAboutModal();
 }
 
 
@@ -248,20 +249,20 @@ console.log(recipes);
   makeSinglePlantRecipeViewFromJson(recipes);
 })
 
-
 }
 function makeSinglePlantRecipeViewFromJson(recipes){
   containerEl.innerHTML = header();
   containerEl.innerHTML += singlePlantRecipeView(recipes);
   containerEl.innerHTML += footer();
 
-  const homeButton = document.querySelector(".homeBtn");
+const homeButton = document.querySelector(".homeBtn");
 homeButton.addEventListener("click",()=>{
 makeHomeView();
 })
-
 const allRecButton = document.querySelector(".allRecipesButton");
 allRecButton.addEventListener("click", makeAllRecipesView);
+
+makeAboutModal();
 
 const backButton = document.querySelector(".backBtn");
 backButton.addEventListener("click", ()=>{
@@ -272,18 +273,31 @@ backButton.addEventListener("click", ()=>{
   findFrostDateFromZipCode(selectedPlants);
   }
 })
-
   const recipeImgBtn = document.querySelectorAll(".recipeImage");
-  recipeImgBtn.addEventListener("click", () => {
-    
+  recipeImgBtn.addEventListener("click", () => {  
   })
+ 
+}
+// *************************************************
+// **************************************************
+// THIS IS THE ABOUT US SECTION
+// *************************************************
+function makeAboutModal(){
+  const aboutUsBtn = document.querySelector(".aboutUsButton");
+  const closeModalBtn = document.querySelector(".closeModal");
+  const aboutUsModal = document.querySelector(".aboutusmodal");
 
-
-
+  aboutUsBtn.addEventListener("click", () =>{
+    aboutUsModal.style.display = 'block';
+    closeModalBtn.style.display = 'block';
+    console.log('working');
+  })
+  closeModalBtn.addEventListener('click', () => {
+    aboutUsModal.style.display = 'none';
+    closeModalBtn.style.display = 'none';
+})
 
 }
-
-
 
 // *************************************************
 // **************************************************
