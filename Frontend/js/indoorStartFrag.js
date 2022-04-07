@@ -8,10 +8,10 @@ export default function indoorStartFrag(plant, d) {
     }
     else { 
         return new Date(d.getTime() + plant.indoorCalc * lengthOfDay);
-        // .toISOString().slice(0, 10);
+
         // .toDateString();
 
-    // calendarButton();
+
     };
     
 }
