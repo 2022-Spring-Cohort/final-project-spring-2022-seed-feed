@@ -1,7 +1,7 @@
 export default function calendarButton(plantDate, plant, fdate) {
   console.log(plant);
   let date = plantDate;
-  if(plantDate == "Don't plant this inside!"){
+  if(plantDate == "Not recommended."){
     date = fdate;
   }
     return `<div class="atcb" style="display:none;">
