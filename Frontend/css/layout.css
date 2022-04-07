@@ -76,6 +76,9 @@ display: flex;
 }
 .submitButton{
     display: flex;
+    width: 20em;
+    height: 5em;
+    margin-top: 3em;
 }
 
 .navList li{

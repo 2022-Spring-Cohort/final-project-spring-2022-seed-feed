@@ -107,7 +107,6 @@ function makeHomeViewFromJSON(plants){
   // Deleted this section because submit button already does this function.
   // const zipSubBtn = containerEl.querySelector(".zipSubmitButton");
   // zipSubBtn.addEventListener("click", findFrostDateFromZipCode);
-
   console.log(plants.id);
 
   // //All recipes button

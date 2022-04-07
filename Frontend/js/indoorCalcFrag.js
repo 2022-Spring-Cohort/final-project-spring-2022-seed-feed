@@ -3,7 +3,7 @@ export default function indoorCalcFrag(plant, d) {
 
   if (plant.indoorCalc == -999) {
     //WHEN CHANGING THIS STRING, CHANGE STRING ON calendarButton.js LINE 4
-    return "Don't plant this inside!";
+    return "Not recommended.";
   } else {
     return new Date(d.getTime() + plant.indoorCalc * lengthOfDay)
       .toDateString()
