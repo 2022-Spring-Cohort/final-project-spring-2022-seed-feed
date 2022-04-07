@@ -11,6 +11,8 @@ return`
    <li class ="homeBtn">Home</li>
    <li class="allRecipesButton">Recipes</li>
    <li class="aboutUsButton">About</li>
+   <li class="gardenResources">Gardening Resources</li>
+
 </ul>    
 </nav>
 
