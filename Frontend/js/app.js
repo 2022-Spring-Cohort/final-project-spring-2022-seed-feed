@@ -4,6 +4,7 @@ import header from "./header.js";
 import footer from "./footer.js";
 import allRecipesView from "./allRecipesView.js";
 import singlePlantRecipeView from "./singlePlantRecipeView.js";
+import gardenResourcesView from "./gardenResourcesView.js";
 // import atcb_init from "./atcb/atcb.js";
 
 let selectedPlants;
@@ -114,6 +115,10 @@ function makeHomeViewFromJSON(plants){
   allRecButton.addEventListener("click", makeAllRecipesView);
 
   makeAboutModal();
+
+  const gardenButton = document.querySelector(".gardenResources");
+  gardenButton.addEventListener('click',makeGardenResourcesView);
+  
 }
 
 makeHomeView();
@@ -189,6 +194,10 @@ const allRecButton = document.querySelector(".allRecipesButton");
 allRecButton.addEventListener("click", makeAllRecipesView);
 
 makeAboutModal();
+
+const gardenButton = document.querySelector(".gardenResources");
+gardenButton.addEventListener('click',makeGardenResourcesView);
+
 }
 
 // *************************************************
@@ -231,6 +240,10 @@ backButton.addEventListener("click", ()=>{
   makeHomeView();
 })
 makeAboutModal();
+
+const gardenButton = document.querySelector(".gardenResources");
+gardenButton.addEventListener('click',makeGardenResourcesView);
+
 }
 
 
@@ -264,6 +277,10 @@ allRecButton.addEventListener("click", makeAllRecipesView);
 
 makeAboutModal();
 
+const gardenButton = document.querySelector(".gardenResources");
+gardenButton.addEventListener('click',makeGardenResourcesView);
+
+
 const backButton = document.querySelector(".backBtn");
 backButton.addEventListener("click", ()=>{
   if(recipeViewSelected){
@@ -296,8 +313,38 @@ function makeAboutModal(){
     aboutUsModal.style.display = 'none';
     closeModalBtn.style.display = 'none';
 })
-
 }
+
+// *************************************************
+// **************************************************
+// THIS IS THE GARDEN RESOURCES VIEW
+// *************************************************
+
+function makeGardenResourcesView(){
+  containerEl.innerHTML = header();
+  containerEl.innerHTML += gardenResourcesView()
+  containerEl.innerHTML += footer();
+
+
+  const homeButton = document.querySelector(".homeBtn");
+  homeButton.addEventListener("click",makeHomeView);
+  
+  const allRecButton = document.querySelector(".allRecipesButton");
+  allRecButton.addEventListener("click", makeAllRecipesView);
+
+  makeAboutModal();
+
+  const backToHomeButton = document.querySelector(".backToHomeBtn");
+  backToHomeButton.addEventListener("click", makeHomeView);
+
+
+  
+}
+
+
+
+
+
 
 // *************************************************
 // **************************************************
