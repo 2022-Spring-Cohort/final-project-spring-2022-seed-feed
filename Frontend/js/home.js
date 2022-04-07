@@ -2,13 +2,8 @@ export default function home(plants) {
   return `
     <main class="mainContent">
     <div class="mainSection">
-    <h1>Want to start a garden, but don't know when to plant?</h1>
    
-    <div class="zipcodeSection">
-   <input type="text" maxlength="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\/g, '$1');" class="zipcode" placeholder="Enter Your Zipcode"> 
 
-    <br>
-   </div>
 
  
  
@@ -16,8 +11,19 @@ export default function home(plants) {
         <section>
        
    
-    <legend>Plants to check</legend>  
-       <fieldset>
+    
+  <div class="textAndCheckbox">
+  <div class="textAndZipBox">
+    <h2 class="homeText">Lorem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.</h2>
+    <div class="zipcodeSection">
+    <input type="text" maxlength="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\/g, '$1');" class="zipcode" placeholder="Enter Your Zipcode"> 
+     <br>
+    </div>
+    </div>
+    
+    <fieldset class="checkList">
+    
+       
      ${plants
        .map((plant) => {
          return `
@@ -27,16 +33,18 @@ export default function home(plants) {
     ${plant.name}<br>  
   <input type="hidden" class="veg_id" value="${plant.id}">
         <br>  
+      
 </div>
+
  
  `;
        })
        .join("")} 
            </fieldset> 
+           </div>
            
-              <input type="submit" class="submitButton" value="Submit now">  
-
     </section>
+    <input type="submit" class="submitButton" value="Submit now"> 
   
     <br>
     <img class="vegImg" src="img/veg.png">
@@ -48,4 +56,5 @@ export default function home(plants) {
     `;
 }
 
+ 
 //   <button class="zipSubmitButton">subZIP</button> Line 9
