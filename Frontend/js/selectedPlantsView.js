@@ -22,7 +22,7 @@ ${plants
 <h3 class="maturityDay"> Days to maturity: ${plant.maturityDays}</h3>
 <h3 class="height"> Height: ${plant.height}</h3>
 <h3 class="sun"> Sun exposure: ${plant.sunExposure}</h3>
-<h3 class="indoorStartH3"> Indoor start date: ${plant.indoorCalc}</h3>
+
 
 
 <button class ="clickForRecipeButton">Click for ${plant.name} recipes </button>
