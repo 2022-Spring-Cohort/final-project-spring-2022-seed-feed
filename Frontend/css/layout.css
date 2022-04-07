@@ -66,5 +66,19 @@ display: flex;
 .homeText{
    max-width: 30em;
 
+}
+
+.textAndZipBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    
+}
+.submitButton{
+    display: flex;
+}
+
+.navList li{
+    padding-bottom: 5em;
+   list-style-type: none;
 }

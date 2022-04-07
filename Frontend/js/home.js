@@ -2,12 +2,8 @@ export default function home(plants) {
   return `
     <main class="mainContent">
     <div class="mainSection">
-    <h1>Want to start a garden, but don't know when to plant?</h1>
-    <div class="zipcodeSection">
-   <input type="text" maxlength="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\/g, '$1');" class="zipcode" placeholder="Enter Your Zipcode"> 
+   
 
-    <br>
-   </div>
 
  
  
@@ -15,9 +11,16 @@ export default function home(plants) {
         <section>
        
    
-    <legend>Plants to check</legend> 
+    
   <div class="textAndCheckbox">
-    <p class="homeText">Lorem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.</p>
+  <div class="textAndZipBox">
+    <h2 class="homeText">Lorem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.</h2>
+    <div class="zipcodeSection">
+    <input type="text" maxlength="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\/g, '$1');" class="zipcode" placeholder="Enter Your Zipcode"> 
+     <br>
+    </div>
+    </div>
+    
     <fieldset class="checkList">
     
        
@@ -40,9 +43,8 @@ export default function home(plants) {
            </fieldset> 
            </div>
            
-              <input type="submit" class="submitButton" value="Submit now">  
-
     </section>
+    <input type="submit" class="submitButton" value="Submit now"> 
   
     <br>
     <img class="vegImg" src="img/veg.png">
