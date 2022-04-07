@@ -3,7 +3,6 @@ export default function home(plants) {
     <main class="mainContent">
     <div class="mainSection">
     <h1>Want to start a garden, but don't know when to plant?</h1>
-   
     <div class="zipcodeSection">
    <input type="text" maxlength="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\/g, '$1');" class="zipcode" placeholder="Enter Your Zipcode"> 
 
@@ -16,8 +15,12 @@ export default function home(plants) {
         <section>
        
    
-    <legend>Plants to check</legend>  
-       <fieldset>
+    <legend>Plants to check</legend> 
+  <div class="textAndCheckbox">
+    <p class="homeText">Lorem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.orem ipsum dolor sit amet consectetur.</p>
+    <fieldset class="checkList">
+    
+       
      ${plants
        .map((plant) => {
          return `
@@ -27,12 +30,15 @@ export default function home(plants) {
     ${plant.name}<br>  
   <input type="hidden" class="veg_id" value="${plant.id}">
         <br>  
+      
 </div>
+
  
  `;
        })
        .join("")} 
            </fieldset> 
+           </div>
            
               <input type="submit" class="submitButton" value="Submit now">  
 
@@ -48,4 +54,5 @@ export default function home(plants) {
     `;
 }
 
+ 
 //   <button class="zipSubmitButton">subZIP</button> Line 9

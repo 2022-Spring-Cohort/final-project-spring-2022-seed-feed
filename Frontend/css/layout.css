@@ -40,3 +40,31 @@
     display: flex;
     justify-content: center;
 }
+
+.checkList{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+height: 30em;
+width: 40em;
+margin-left: 10em;
+
+}
+
+.checkbox_input{
+display: flex;
+}
+
+.textAndCheckbox{
+    display: flex;
+    align-items: center;
+    
+   
+
+
+}
+.homeText{
+   max-width: 30em;
+
+   
+}
