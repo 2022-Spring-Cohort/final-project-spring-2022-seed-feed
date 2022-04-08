@@ -1,0 +1,140 @@
+*{
+margin-top: 0px;
+flex-wrap: wrap;
+}
+
+.vegImg{
+    height: 20em;
+}
+.mainSection{
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+}
+.navList{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.mainTitle{
+    text-align: center;
+}
+.subtitle{
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+/* Selected Plants View CSS below */
+.plantPhoto{
+    height: 10em;
+}
+
+.bannerImage{
+    height: 17em;
+    margin-top: 0px;
+    
+}
+.bottomImg{
+    height: 17em;
+    margin-bottom: 0px;
+}
+.footer{
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 0px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+
+.checkList{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+height: 35em;
+width: 42em;
+margin-left: 2em;
+justify-content: space-around;
+padding-top: 1.5em;
+
+}
+
+.checkbox_input{
+display: flex;
+padding-bottom: 5px;
+}
+
+
+.textAndCheckbox{
+    display: flex;
+    align-items: center;
+}
+.homeText{
+   max-width: 30em;
+   font-weight: 300;
+
+}
+
+.textAndZipBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30em;
+   
+}
+.submitButton{
+    display: flex;
+    width: 20em;
+    height: 5em;
+    margin-top: 3em;
+}
+
+.navList li{
+    padding-bottom: 5em;
+   list-style-type: none;
+}
+.container {
+margin-top: 0px;
+}
+.seedDiv{
+display: flex;
+}
+.seedStart{
+    display: flex;
+}
+.canning{
+    display: flex;
+}
+.soilDiv{
+    display: flex;
+}
+
+.stationDisplay{
+    text-transform: capitalize;
+}
+.welcome{
+    text-align: center;
+}
+/* @media screen and (max-width: 600px) {
+    .container{
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+} */
