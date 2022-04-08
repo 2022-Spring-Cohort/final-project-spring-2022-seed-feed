@@ -23,37 +23,64 @@ return`
             <span class="closeModal">&times;</span>
             <div class="aboutuscontent">
                 <h1 class="aboutUs">Seed & Feed</h1>
-                <h2 class="linkInfo">Meet the Developers:</h2>
-                <article class="photos">
-                    <section class="BenName">
-                        <a class="headshots" href="https://www.linkedin.com/in/hari-adhikari-77935116b/" target="_blank"> 
-                        <img class="profile" alt="Smith Headshot" src="./img/beets_photo.jpg"/></a>
-                        <p class="personName">Ben Gibbs</p>
-                    </section>
-                    <section class="avery names">
-                        <a class="headshots" href="https://www.linkedin.com/in/averycs/" target="_blank"> 
-                        <img class="profile"
-                        alt="Averys Headshot " src="./img/carrots_photo.jpg" /></a>
-                        <p class="personName">Avery Smith</p>
-                    </section>
-                    <section class="RyanName">
-                        <a class="headshots" href="https://www.linkedin.com/in/mikethecoder/" target="_blank">
-                         <img class="profile" alt="Mikes Headshot" src="./img/carrots_photo.jpg" />
-                         </a>
-                        <p class="personName">Ryan McCurdy</p>
-                    </section>
-                    <section class="JenniferName">
-                    <a class="headshots" href="https://www.linkedin.com/in/mikethecoder/" target="_blank">
-                     <img class="profile" alt="Mikes Headshot" src="./img/beets_photo.jpg" />
-                     </a>
-                    <p class="personName">Jennifer Adams</p>
-                </section>
-                <section class="DylanName">
-                <a class="headshots" href="https://www.linkedin.com/in/mikethecoder/" target="_blank">
-                 <img class="profile" alt="Mikes Headshot" src="./img/cabbage_photo.jpg" />
-                 </a>
-                <p class="personName">Dylan Creech</p>
-            </section>
+                    <h2 class="linkInfo">Meet the Developers:</h2>
+                        <article class="photos">
+                            <section class="person">
+                                <a class="headshots" href="https://www.linkedin.com/in/benjamin-gibbs2/" target="_blank"><img class="profile" alt="Ben's Headshot" src="./img/people/Ben.jpg"/></a>
+                                    <div class="individual">
+                                        <p class="personName">Ben Gibbs</p>
+                                        <p class="aboutText">Full-Stack Software and Web Developer</p>
+                                    </div>
+                                    <div class="logos">
+                                        <a href="https://github.com/benjamin-gibbs-2"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
+                                        <a href="https://www.linkedin.com/in/benjamin-gibbs2/"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
+                                    </div>
+                            </section>
+                            <section class="person">
+                                <a class="headshots" href="https://www.linkedin.com/in/averycs/" target="_blank"><img class="profile" alt="Avery's Headshot " src="./img/people/Avery.jpg" /></a>
+                                    <div class="individual">
+                                        <p class="personName">Avery Smith</p>
+                                        <p class="aboutText">Full-Stack Software and Web Developer</p>
+                                    </div>
+                                    <div class="logos">
+                                        <a href="https://github.com/AveryCS"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
+                                        <a href="https://www.linkedin.com/in/averycs/"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
+                                    </div>
+                            </section>
+                            <section class="person">
+                                <a class="headshots" href="https://mccurdyr.github.io" target="_blank"><img class="profile" alt="Ryan's Headshot" src="./img/people/Ryan.jpg" /></a>
+                                    <div class="individual">
+                                        <p class="personName">Ryan McCurdy</p>
+                                        <p class="aboutText">Full-Stack Software and Web Developer & Compassion Enthusiast</p>
+                                    </div>
+                                    <div class="logos">
+                                        <a href="https://github.com/mccurdyr"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
+                                        <a href="https://www.linkedin.com/in/mccurdyr/"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
+                                    </div>
+                            </section>
+                            <section class="person">
+                                <a class="headshots" href="https://www.linkedin.com/in/jenniferannadams/" target="_blank"><img class="profile" alt="Jen's Headshot" src="./img/people/Jen.jpg" /></a>
+                                    <div class="individual">
+                                        <p class="personName">Jennifer Adams</p>
+                                        <p class="aboutText">Full-Stack Software and Web Developer</p>
+                                    </div>
+                                    <div class="logos">
+                                        <a href="https://github.com/jenniferaadams"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
+                                        <a href="https://www.linkedin.com/in/jenniferannadams/"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
+                                    </div>
+                            </section>
+                            <section class="person">
+                                <a class="headshots" href="https://www.linkedin.com/in/dylan-creech1/" target="_blank"><img class="profile" alt="Dylan's Headshot" src="./img/people/Dylan.jpg" /></a>
+                                    <div class="individual">
+                                        <p class="personName">Dylan Creech</p>
+                                        <p class="aboutText">Full-Stack Software and Web Developer</p>
+                                    </div>
+                                    <div class="logos">
+                                        <a href="https://github.com/Shoko1321"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
+                                        <a href="https://www.linkedin.com/in/dylan-creech1/"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
+                                    </div>
+                                
+                        </section>
                 </article>
             </div>
         </div>
