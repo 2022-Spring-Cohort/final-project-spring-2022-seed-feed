@@ -1,5 +1,6 @@
 *{
-margin: 0px;
+margin-top: 0px;
+flex-wrap: wrap;
 }
 
 .vegImg{
@@ -64,15 +65,19 @@ margin: 0px;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
-height: 30em;
-width: 40em;
-margin-left: 10em;
+height: 35em;
+width: 42em;
+margin-left: 2em;
+justify-content: space-around;
+padding-top: 1.5em;
 
 }
 
 .checkbox_input{
 display: flex;
+padding-bottom: 5px;
 }
+
 
 .textAndCheckbox{
     display: flex;
@@ -80,6 +85,7 @@ display: flex;
 }
 .homeText{
    max-width: 30em;
+   font-weight: 300;
 
 }
 
@@ -120,3 +126,15 @@ display: flex;
 .stationDisplay{
     text-transform: capitalize;
 }
+.welcome{
+    text-align: center;
+}
+/* @media screen and (max-width: 600px) {
+    .container{
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+} */
