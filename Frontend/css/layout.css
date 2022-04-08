@@ -116,3 +116,7 @@ display: flex;
 .soilDiv{
     display: flex;
 }
+
+.stationDisplay{
+    text-transform: capitalize;
+}

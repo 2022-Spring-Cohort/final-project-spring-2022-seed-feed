@@ -138,13 +138,18 @@ var queryString = "";
 var checkboxes = document.querySelectorAll("input:checked");
 
 for (var i = 0; i < checkboxes.length; i++) {
-  console.log(checkboxes[i].parentElement.querySelector(".veg_id").value);
+
+
   array.push(checkboxes[i].parentElement.querySelector(".veg_id").value);
   queryString +=
     checkboxes[i].parentElement.querySelector(".veg_id").value + "," ;
   // TRIM QUERYSTRING HERE AS STRETCH GOAL
+  
+ }
+if (!Array.isArray(array) || !array.length ) {
+  alert("Please select at least one plant");
 }
-
+else {
 fetch("http://localhost:8080/plants?plantsIds="+queryString) 
 .then(res => res.json())
 .then(plants =>{
@@ -156,6 +161,7 @@ zipNumber = zipNumb.value;
 
 })
 }  
+}
 
 function makeSelectedPlantViewFromJson(plants, date, stationName){
   recipeViewSelected = false;
@@ -343,7 +349,15 @@ function makeGardenResourcesView(){
 
 
 
-
+function titleCaseTest(str) {
+  return str
+    .toLowerCase()
+    .split(" ")
+    .map(function (word) {
+      return word.replace(word[0], word[0].toUpperCase());
+    })
+    .join(" ");
+}
 
 // *************************************************
 // **************************************************

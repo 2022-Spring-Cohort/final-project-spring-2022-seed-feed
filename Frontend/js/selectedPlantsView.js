@@ -2,6 +2,8 @@ import indoorStartFrag from "./indoorStartFrag.js";
 import calendarButton from "./calendarButton.js";
 import indoorCalcFrag
  from "./indoorCalcFrag.js";
+
+
 export default function selectedPlantsView(plants, d, stationName){
     console.log(plants + d);
     const lengthOfDay = (24 * 60 * 60 * 1000);
@@ -21,7 +23,7 @@ ${plants
 <img class="plantPhoto" src=${plant.photoLink}>
 <p>${plant.careTips}</p>
 <h3 class="maturityDay"> Days to maturity: ${plant.maturityDays}</h3>
-<h3 class="height"> Height: ${plant.height}</h3>
+<h3 class="height"> Height: ${plant.height} inches</h3>
 <h3 class="sun"> Sun exposure: ${plant.sunExposure}</h3>
 <h3 class="companion">Recommended Companion Plants: ${plant.companionPlants}</h3>
 
@@ -38,7 +40,7 @@ ${plants
   })
   .join("")}
 
-  <h2>Nearest Reporting Weather Station: ${stationName}</h2>
+  <h2 class="stationDisplay">Nearest Reporting Weather Station: ${((stationName.toLowerCase(stationName)))}</h2>
   
 </div>`;
 

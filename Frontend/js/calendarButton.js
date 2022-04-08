@@ -7,12 +7,12 @@ export default function calendarButton(plantDate, plant, fdate) {
     return `<div class="atcb" style="display:none;">
     {
       "name":"Today's the day to plant your ${plant.name}",
-      "description":"A nice description does not hurt",
+      "description":"",
       "startDate":"${date.getFullYear()}-${(date.getMonth()+1)}-${date.getDate()}",
       "endDate":"${date.getFullYear()}-${(date.getMonth()+1)}-${date.getDate()}",
       "startTime":"11:00",
       "endTime":"12:00",
-      "location":"Somewhere over the rainbow",
+      "location":"My Garden",
       "label":"Add to Calendar",
       "options":[
         "Apple",
