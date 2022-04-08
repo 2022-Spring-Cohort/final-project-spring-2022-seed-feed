@@ -48,3 +48,6 @@ ${plants
 
 
 }
+
+//   Check out the care tips and even browse our recipes page for inspiration on what to cook once your plant is ready to harvest!
+// And, we know life gets busy, so we’ve got you covered! Add a calendar reminder with just a simple click.
