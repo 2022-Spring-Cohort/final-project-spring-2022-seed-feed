@@ -1,0 +1,15 @@
+.zipcode{
+
+   font-size: xx-large;
+}
+*{
+    /* font-family: 'Anybody', cursive; */
+    font-family: 'Poppins', sans-serif;
+    color: #575757;
+}
+.checkbox_input{
+    font-size: small;
+}
+.plantNameCheck{
+    padding-left: 5px;
+}

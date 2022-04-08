@@ -5,7 +5,7 @@ return`
 <img class="bannerImage" src="img/veg-top-2.png">
 </div>
 <h1 class="mainTitle">Seed & Feed</h1> 
-<h2 class="subtitle">A Modern Garden Planner and Recipe Finder</h2>
+
 </header>
 
 <nav>
