@@ -2,10 +2,12 @@ export default function header(){
 return`
 <header>
 <div class ="banner">
-<img class="bannerImage" src="img/banner.png">
+<img class="bannerImage" src="img/veg-top-2.png">
 </div>
-<h1 class="mainTitle">Seed and Feed</h1> 
+<h1 class="mainTitle">Seed & Feed</h1> 
+<h2 class="subtitle">A Modern Garden Planner and Recipe Finder</h2>
 </header>
+
 <nav>
 <ul class="navList">
    <li class ="homeBtn">Home</li>
@@ -59,3 +61,4 @@ return`
 `
 
 }
+
