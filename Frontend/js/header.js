@@ -1,8 +1,8 @@
 export default function header(){
-return`
+return `
 <header>
 <div class ="banner">
-<img class="bannerImage" src="img/veg-top-2.png">
+<img alt="Header banner image of Vegetables" class="bannerImage" src="img/veg-top-2.png">
 </div>
 <h1 class="mainTitle">Seed & Feed</h1> 
 <h2 class="welcome">Welcome to Seed & Feed! A Modern Garden Planner and Recipe Finder</h2>
@@ -85,7 +85,7 @@ return`
             </div>
         </div>
      </div>
-`
+`;
 
 }
 

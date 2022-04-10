@@ -33,7 +33,7 @@ ${plants
 <button class ="clickForRecipeButton">Click for ${plant.name} recipes </button>
 
 <h1>Recommended indoor start date: ${indoorCalcFrag(plant, d)}</h1>
-<h1>Recommended outdoor start date:${d.toDateString()}</h1>
+<h1>Recommended outdoor start date: ${d.toDateString()}</h1>
 <button id="default-button">Calendar Button${calendarButton(indoorStartFrag(plant, d), plant, d)}</button>
 
 </div>`;

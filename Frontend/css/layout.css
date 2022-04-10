@@ -1,4 +1,5 @@
 *{
+    display: f;
 margin-top: 0px;
 flex-wrap: wrap;
 background-color: #f0f5df;
@@ -26,14 +27,17 @@ background-color: #f0f5df;
     width: 90%;
     justify-content: space-around;
     align-items: center;
-    background-color: #F2780C;
+    /* background-color: #F2780C; */
+    background-color: #F7A055;
 }
 .navList li{
-    color: white;
+    /* color: white; */
+    color: black;
     display: flex;
     justify-content: center;
     font-size: x-large;
-    background-color: #F2780C;
+    /* background-color: #F2780C; */
+        background-color: #F7A055;
 }
 .mainTitle{
     text-align: center;
@@ -89,12 +93,15 @@ margin-left: 2em;
 justify-content: space-around;
 padding-top: 1.5em;
 background-color: white;
+
 }
 
 .checkbox_input{
 display: flex;
 padding-bottom: 5px;
 background-color: white;
+align-items: baseline;
+
 }
 
 
@@ -115,7 +122,7 @@ background-color: white;
     display: flex;
     align-items: center;
     width: fit-content;
-   
+
 }
 .submitButton{
     display: flex;
@@ -147,8 +154,18 @@ display: flex;
 .welcome{
     text-align: center;
 }
-/* @media screen and (max-width: 600px) {
-    .container{
+@media screen and (max-width: 600px) {
+    .mainSection{
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+}
+
+/* @media screen and (max-width: 922px) {
+    .checkBox{
         flex-wrap: nowrap;
         display: flex;
         justify-content: center;
@@ -157,6 +174,17 @@ display: flex;
     }
 } */
 
+
 .mainSection{
     display: flex;
+}
+
+
+label{
+    /* border: none;
+    background: none; */
+    order: 2;
+}
+input {
+    order: 1;
 }

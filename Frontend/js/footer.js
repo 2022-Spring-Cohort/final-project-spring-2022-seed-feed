@@ -1,7 +1,7 @@
 export default function footer(){
-    return`
+    return `
     <div class ="footer">
-    <img class="bottomImg" src="img/bottom-banner.png">
+    <img alt="Footer banner image of Vegetables" class="bottomImg" src="img/bottom-banner.png">
 </div>
-    `
+    `;
     }
