@@ -15,9 +15,9 @@
     padding-left: 5px;
     background-color: white;
 }
-nav {
+ nav { 
     /* background-color: #F2780C; */
-        background-color: #F7A055;
+     background-color: #F7A055;
     display: flex;
     justify-content: center;
     height: 3em;

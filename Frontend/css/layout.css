@@ -1,4 +1,9 @@
 *{
+    box-sizing: border-box;
+    
+}
+
+*{
     display: f;
 margin-top: 0px;
 flex-wrap: wrap;
@@ -20,7 +25,14 @@ background-color: #f0f5df;
     height: 80em;
     flex-wrap: wrap;
  }
+
+/* *********************** */
+/* NAV BAR */
+
+
+
 .navList{
+
     margin-top: .5em;
     display: flex;
     list-style-type: none;
@@ -39,6 +51,7 @@ background-color: #f0f5df;
     /* background-color: #F2780C; */
         background-color: #F7A055;
 }
+
 .mainTitle{
     text-align: center;
 }
@@ -61,6 +74,8 @@ background-color: #f0f5df;
 /* Selected Plants View CSS below */
 .plantPhoto{
     height: 10em;
+        /* max-width: 250px; */
+        object-fit: fill;
 }
 
 .bannerImage{
@@ -81,6 +96,7 @@ background-color: #f0f5df;
 .banner{
     display: flex;
     justify-content: center;
+
 }
 
 .checkList{
@@ -187,4 +203,84 @@ label{
 }
 input {
     order: 1;
+}
+
+/* ****************************** */
+/*  allRecipeView BELOW                       */
+/* ****************************** */
+.allRecipes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.allRecDiv {
+    display: flex;
+    flex: 25%;
+    padding: 20px;
+    border: #006992 solid;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .allRecDiv{
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .allRecipes {
+        flex-direction: column;
+    }
+}
+
+.plantPhoto img {
+    object-fit: contain;
+}
+
+.plantPhoto:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+/* ****************************** */
+/*  singlePlantRecipeView BELOW           */
+/* ****************************** */
+
+.singleRecipes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.singleRecipeDiv {
+    display: flex;
+    flex: 20%;
+    padding: 20px;
+    border: #006992 solid;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .singleRecipeDiv{
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .singleRecipes {
+        flex-direction: column;
+    }
+}
+
+.recipeImage img {
+    object-fit: contain;
+}
+
+.recipeImage:hover {
+    transform: scale(1.2);
 }
