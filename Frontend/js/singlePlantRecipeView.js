@@ -6,7 +6,7 @@ ${recipes.hits.map(hit => {
     <div class="singleRecipeDiv">
 <h1>${hit.recipe.label}</h1>
 <a href="${hit.recipe.url}">
-<img class="recipeImage" src="${hit.recipe.images.SMALL.url}"></a>
+<img alt="Image for ${hit.recipe.label} recipe. Click here to open the link in a new window." class="recipeImage" src="${hit.recipe.images.SMALL.url}"></a>
 </div>`
 }).join("")
 }

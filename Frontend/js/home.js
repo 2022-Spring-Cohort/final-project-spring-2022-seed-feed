@@ -21,9 +21,14 @@ export default function home(plants) {
          return `
 
 <div class="checkbox_input">
-    <input type="checkbox" name="veg_select" class="checkPlantName"><p class="plantNameCheck">${plant.name}</p><br>
+
+    <input type="checkbox" id="${plant.id}" name="${plant.id}" class="checkPlantName">
+     <label for="${plant.id}" class="plantNameCheck">${plant.name}</label>
+ <br>
+
   <input type="hidden" class="veg_id" value="${plant.id}">
         <br>   
+   
 </div>
 
  `;
