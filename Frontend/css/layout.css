@@ -27,16 +27,16 @@ background-color: #f0f5df;
     justify-content: space-around;
     align-items: center;
     /* background-color: #F2780C; */
-    background-color: #F7A055;
+    background-color: #e58c60;
 }
 .navList li{
     /* color: white; */
-    color: #4A5817;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     font-size: x-large;
     /* background-color: #F2780C; */
-        background-color: #F7A055;
+        background-color: #e58c60;
 }
 .mainLogo{
     height: 11em;
@@ -117,7 +117,14 @@ align-items: baseline;
 }
 
 .homeText{
-    padding-top: 3em;
+    padding-top: 1em;
+    background-color: #4f6111;
+    color: #ffffff;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 30px;
 
 
 }
@@ -130,10 +137,9 @@ align-items: baseline;
 
 }
 .submitButton{
-    display: flex;
+    
     width: 20em;
-    height: 5em;
-    margin-top: 3em;
+    /* margin-top: 3em; */
 }
 
 
@@ -148,8 +154,14 @@ align-items: baseline;
     display: flex;
     width: 30em;
     flex-direction: column;
+    background-color: #4f6111;
+    align-items: center;
+    border-radius: 25px;
+  
 }
-
+.zipDiv{
+    background-color: #4f6111; 
+}
 .container {
 margin-top: 0px;
 }

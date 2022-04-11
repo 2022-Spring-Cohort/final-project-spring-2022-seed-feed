@@ -10,8 +10,10 @@ export default function home(plants) {
        Enter your zip code, choose the plants you’d like for your garden, and voilà! <br><br>We’ll tell you if you should begin the seeds indoors based on your area and when you should plant them outside.
        <br>
       </h1>
+ <div class="zipDiv">     
 <input type="text" maxlength="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\/g, '$1');" class="zipcode" placeholder="Enter Your Zipcode"> 
-<input type="submit" class="submitButton" value="See My Garden Plan"> 
+</div>
+<img src="./img/gardenBtn.png" input type="submit" class="submitButton"> 
 </div>
   <div class="checkBox">
     <fieldset class="checkList">

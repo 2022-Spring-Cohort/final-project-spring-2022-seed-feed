@@ -1,6 +1,15 @@
 .zipcode{
+    
    font-size: xx-large;
    background-color: white;
+   width: 10em;
+   border-radius: 10px;
+   padding-left: 1em;
+   margin-bottom: 2em;
+   margin-top: 1em;
+
+   
+  
 }
 *{
     /* font-family: 'Anybody', cursive; */
@@ -17,7 +26,7 @@
 }
 nav {
     /* background-color: #F2780C; */
-        background-color: #F7A055;
+        background-color: #e58c60;
     display: flex;
     justify-content: center;
     height: 3em;
