@@ -15,8 +15,9 @@ return `
    <li class="allRecipesButton">Recipes</li>
    <li class="aboutUsButton">About</li>
    <li class="gardenResources">Gardening Resources</li>
-</ul>    
-</nav>
+    </ul>  
+     </nav>
+
 
 <div id="aboutUsModal" class="aboutusmodal">
         <div class="aboutusmodal-content">
@@ -86,6 +87,8 @@ return `
         </div>
      </div>
 `;
+
+
 
 }
 
