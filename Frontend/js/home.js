@@ -11,7 +11,7 @@ export default function home(plants) {
        <br>
       </h1>
  <div class="zipDiv">     
-<input type="text" maxlength="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\/g, '$1');" class="zipcode" placeholder="Enter Your Zipcode"> 
+<input alt="Enter a 5 digit zipcode here" type="text" maxlength="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\/g, '$1');" class="zipcode" placeholder="Enter Your Zipcode"> 
 </div>
 <img src="./img/gardenBtn.png" input type="submit" class="submitButton"> 
 </div>
@@ -32,7 +32,9 @@ export default function home(plants) {
  `;
        })
        .join("")} 
+       
            </fieldset> 
+
            </div>
 </div>
            

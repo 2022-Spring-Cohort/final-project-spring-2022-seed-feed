@@ -1,3 +1,4 @@
+
 .modal, .aboutusmodal {
     display: none;
     position: fixed;
@@ -48,6 +49,7 @@
     display: flex;
     margin-top: 20px;
     justify-content: center;
+
     
 }
 
@@ -83,11 +85,13 @@
 
 .person {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
     max-width: 90%;
     justify-content: space-between;
     margin-top: 15px;
+    object-fit: contain;
 
 }
 

@@ -104,6 +104,9 @@ background-color: #f0f5df;
 
 }
 
+/* ***************** */
+/* CHECK BOX */
+
 .checkList{
 display: flex;
 flex-wrap: wrap;
@@ -124,6 +127,15 @@ display: flex;
 padding-bottom: 5px;
 background-color: white;
 align-items: baseline;
+}
+
+
+
+
+.textHome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
 }
@@ -158,6 +170,27 @@ font-style: italic;
     width: 20em;
     /* margin-top: 3em; */
 }
+
+/* ********************** */
+/* Resources Section? */
+
+
+.resourcesSection{
+    display: flex;
+}
+
+.resourceTitle{
+    display: flex;
+}
+
+.resourceContent{
+    display: flex;
+}
+
+
+
+
+
 
 
 .homeSection{
@@ -211,15 +244,7 @@ display: flex;
     }
 } */
 
-/* @media screen and (max-width: 922px) {
-    .checkBox{
-        flex-wrap: nowrap;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: 30px;
-    }
-} */
+
 
 
 

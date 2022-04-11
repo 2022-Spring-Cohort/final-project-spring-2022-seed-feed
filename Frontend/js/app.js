@@ -162,6 +162,7 @@ zipNumber = zipNumb.value;
 })
 }  
 }
+           
 
 function makeSelectedPlantViewFromJson(plants, date, stationName){
   recipeViewSelected = false;
