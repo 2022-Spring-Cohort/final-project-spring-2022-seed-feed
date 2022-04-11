@@ -1,12 +1,7 @@
 *{
-    box-sizing: border-box;
-    
-}
-
-*{
-    display: f;
+   box-sizing: border-box;
+   
 margin-top: 0px;
-flex-wrap: wrap;
 background-color: #f0f5df;
 }
 
@@ -40,16 +35,25 @@ background-color: #f0f5df;
     justify-content: space-around;
     align-items: center;
     /* background-color: #F2780C; */
-    background-color: #F7A055;
+    background-color: #e58c60;
 }
 .navList li{
     /* color: white; */
-    color: black;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     font-size: x-large;
     /* background-color: #F2780C; */
-        background-color: #F7A055;
+        background-color: #e58c60;
+}
+.mainLogo{
+    height: 11em;
+    margin-bottom: 1.5em;
+
+}
+.logoDiv{
+    display: flex;
+    justify-content: center;
 }
 
 .mainTitle{
@@ -83,6 +87,7 @@ background-color: #f0f5df;
     margin-top: 0px;
     
 }
+
 .bottomImg{
     height: 17em;
     margin-bottom: 0px;
@@ -103,12 +108,14 @@ background-color: #f0f5df;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
-height: 35em;
-width: 85em;
+height: 60em;
+width: 53em;
 margin-left: 2em;
 justify-content: space-around;
 padding-top: 1.5em;
 background-color: white;
+border-radius: 25px;
+filter: drop-shadow(0 0 0.30rem #4A5817 );
 
 }
 
@@ -118,36 +125,60 @@ padding-bottom: 5px;
 background-color: white;
 align-items: baseline;
 
-}
-
-
-.textHome{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
 
 }
+
 .homeText{
- width: 65em;
- text-align: center;
+    padding-top: 1em;
+    background-color: #4f6111;
+    color: #ffffff;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 30px;
 
+
+}
+.goodbye{
+  display: flex;
+justify-content: center;
+font-style: italic;
 }
 
 .checkBox{
     display: flex;
     align-items: center;
     width: fit-content;
+    
 
 }
 .submitButton{
-    display: flex;
+    
     width: 20em;
-    height: 5em;
-    margin-top: 3em;
+    /* margin-top: 3em; */
 }
 
 
+.homeSection{
+    display: flex;
+    margin-top: 3em;
+    padding: 0em 4em 0em 4em;
+
+}
+
+.zipcodeSection{
+    display: flex;
+    width: 30em;
+    flex-direction: column;
+    background-color: #4f6111;
+    align-items: center;
+    border-radius: 25px;
+  
+}
+.zipDiv{
+    background-color: #4f6111; 
+}
 .container {
 margin-top: 0px;
 }
@@ -170,7 +201,7 @@ display: flex;
 .welcome{
     text-align: center;
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .mainSection{
         flex-wrap: nowrap;
         display: flex;
@@ -178,7 +209,7 @@ display: flex;
         flex-direction: column;
         margin-left: 30px;
     }
-}
+} */
 
 /* @media screen and (max-width: 922px) {
     .checkBox{
@@ -190,10 +221,6 @@ display: flex;
     }
 } */
 
-
-.mainSection{
-    display: flex;
-}
 
 
 label{
