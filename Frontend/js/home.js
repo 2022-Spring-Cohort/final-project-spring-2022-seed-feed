@@ -10,7 +10,7 @@ export default function home(plants) {
       </h3>
 </div>
 <div class="zipcodeSection">
-<input type="text" maxlength="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\/g, '$1');" class="zipcode" placeholder="Enter Your Zipcode"> 
+<input alt="Enter a 5 digit zipcode here" type="text" maxlength="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\/g, '$1');" class="zipcode" placeholder="Enter Your Zipcode"> 
 </div>
   <div class="checkBox">
 
@@ -34,7 +34,9 @@ export default function home(plants) {
  `;
        })
        .join("")} 
+       
            </fieldset> 
+
            </div>
            
            </section>

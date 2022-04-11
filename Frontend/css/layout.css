@@ -7,7 +7,11 @@
     display: f;
 margin-top: 0px;
 flex-wrap: wrap;
-background-color: #f0f5df;
+
+}
+
+.container {
+    background-color: #f0f5df;
 }
 
 .vegImg{
@@ -99,6 +103,9 @@ background-color: #f0f5df;
 
 }
 
+/* ***************** */
+/* CHECK BOX */
+
 .checkList{
 display: flex;
 flex-wrap: wrap;
@@ -117,8 +124,9 @@ display: flex;
 padding-bottom: 5px;
 background-color: white;
 align-items: baseline;
-
 }
+
+
 
 
 .textHome{
@@ -146,6 +154,27 @@ align-items: baseline;
     height: 5em;
     margin-top: 3em;
 }
+
+/* ********************** */
+/* Resources Section? */
+
+
+.resourcesSection{
+    display: flex;
+}
+
+.resourceTitle{
+    display: flex;
+}
+
+.resourceContent{
+    display: flex;
+}
+
+
+
+
+
 
 
 .container {
@@ -180,15 +209,7 @@ display: flex;
     }
 }
 
-/* @media screen and (max-width: 922px) {
-    .checkBox{
-        flex-wrap: nowrap;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: 30px;
-    }
-} */
+
 
 
 .mainSection{
