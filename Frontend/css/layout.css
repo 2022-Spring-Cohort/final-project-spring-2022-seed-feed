@@ -1,7 +1,6 @@
 *{
-    display: f;
+
 margin-top: 0px;
-flex-wrap: wrap;
 background-color: #f0f5df;
 }
 
@@ -32,13 +31,23 @@ background-color: #f0f5df;
 }
 .navList li{
     /* color: white; */
-    color: black;
+    color: #4A5817;
     display: flex;
     justify-content: center;
     font-size: x-large;
     /* background-color: #F2780C; */
         background-color: #F7A055;
 }
+.mainLogo{
+    height: 11em;
+    margin-bottom: 1.5em;
+
+}
+.logoDiv{
+    display: flex;
+    justify-content: center;
+}
+
 .mainTitle{
     text-align: center;
 }
@@ -68,6 +77,7 @@ background-color: #f0f5df;
     margin-top: 0px;
     
 }
+
 .bottomImg{
     height: 17em;
     margin-bottom: 0px;
@@ -87,12 +97,14 @@ background-color: #f0f5df;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
-height: 35em;
-width: 85em;
+height: 60em;
+width: 50em;
 margin-left: 2em;
 justify-content: space-around;
 padding-top: 1.5em;
 background-color: white;
+border-radius: 25px;
+filter: drop-shadow(0 0 0.30rem #4A5817 );
 
 }
 
@@ -104,17 +116,9 @@ align-items: baseline;
 
 }
 
-
-.textHome{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-}
 .homeText{
- width: 65em;
- text-align: center;
+    padding-top: 3em;
+
 
 }
 
@@ -122,6 +126,7 @@ align-items: baseline;
     display: flex;
     align-items: center;
     width: fit-content;
+    
 
 }
 .submitButton{
@@ -131,6 +136,19 @@ align-items: baseline;
     margin-top: 3em;
 }
 
+
+.homeSection{
+    display: flex;
+    margin-top: 3em;
+    padding: 0em 4em 0em 4em;
+
+}
+
+.zipcodeSection{
+    display: flex;
+    width: 30em;
+    flex-direction: column;
+}
 
 .container {
 margin-top: 0px;
@@ -154,7 +172,7 @@ display: flex;
 .welcome{
     text-align: center;
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .mainSection{
         flex-wrap: nowrap;
         display: flex;
@@ -162,7 +180,7 @@ display: flex;
         flex-direction: column;
         margin-left: 30px;
     }
-}
+} */
 
 /* @media screen and (max-width: 922px) {
     .checkBox{
@@ -174,10 +192,6 @@ display: flex;
     }
 } */
 
-
-.mainSection{
-    display: flex;
-}
 
 
 label{
