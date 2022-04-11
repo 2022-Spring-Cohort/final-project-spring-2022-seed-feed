@@ -39,8 +39,10 @@ export default function home(plants) {
            </section>
    
     <br>
-    <h3>Thanks for stopping by and entrusting us with both your garden and your meals!</h3>
-</main>
+    <div class="goodbye">
+    <h1 >Thanks for stopping by and entrusting us with both your garden and your meals!</h1>
+</div>
+    </main>
     
     
     `;
