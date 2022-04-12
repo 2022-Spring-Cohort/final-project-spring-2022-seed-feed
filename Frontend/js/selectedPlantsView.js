@@ -11,6 +11,7 @@ return `
 
 <div class="backButton">
 <img class ="backBtn" src="/img/back_arrow.png">
+<button onclick="window.print()" class="printBtn">Print this Page</button>
 </div>
 <div class="frostDate">
 <h2>Your average last frost date is ${d.toDateString()}</h2>
@@ -27,10 +28,12 @@ ${plants
 <img class="plantPhotoSingle" src=${plant.photoLink}>
 </div>
 <div class="careTips">
-<h3>${plant.careTips}</h3>
+<h2>Care Tips:</h2>
+<p class="careTipsWords">${plant.careTips}</p>
 </div>
 
 <div class="plantDetails">
+<h2>Plant Info:</h2>
 <h3 class="maturityDay"> Days to maturity: ${plant.maturityDays}</h3>
 <h3 class="height"> Height: ${plant.height} inches</h3>
 <h3 class="sun"> Sun exposure: ${plant.sunExposure}</h3>
@@ -47,15 +50,16 @@ ${plants
 </div>
 
 <div class="plantCalBtn">
-<button id="default-button">Calendar Button${calendarButton(indoorStartFrag(plant, d), plant, d)}</button>
+<button id="default-button">${calendarButton(indoorStartFrag(plant, d), plant, d)}</button>
 </div>
 
 </div>`;
   })
   .join("")}
 
-  <h2 class="stationDisplay">Nearest Reporting Weather Station: ${((stationName.toLowerCase(stationName)))}</h2>
-  <button onclick="window.print()" class="printBtn">Print this Page</button>
+<div class="weatherDiv">
+  <p class="stationDisplay">All data is pulled using your nearest weather station: ${((stationName.toLowerCase(stationName)))}</p>
+
 </div>`;
 
 

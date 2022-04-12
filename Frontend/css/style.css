@@ -26,7 +26,7 @@
 
 nav {
 
-    background-color: #e58c60;
+    background-color: #ffd20a;
     display: flex;
     justify-content: center;
     height: 3em;
@@ -44,12 +44,40 @@ nav {
     width: 22em;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
+    background-color: white;
 }
 .clickForRecipeButton{
    width: 10em;
+  border: 2px solid #465902;
+  border-radius: 30px;
+  box-shadow: #465902 4px 4px 0 0;
+  color: #465902;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
+
+.clickForRecipeButton:hover {
+  background-color: #fff;
+}
+
+.clickForRecipeButton:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
 .plantRecButton{
     width: 11em;  
     display: flex; 
@@ -58,9 +86,38 @@ nav {
 }
 .clickForRecipeButton{
     height: 5em;
+    background-color: white;
+
+   
 }
 .plantCalBtn{
     display: flex; 
     align-items: center; 
     justify-content: center;
+}
+.printBtn{
+    margin-right: 3em;
+    height: 2.5em;
+    margin-top: .5em;
+}
+.blankButtonDiv{
+
+height: 6em;
+background-color:#e58c60; 
+display: flex; 
+align-items: center; 
+justify-content: center;
+}
+#default-button{
+    background-color: #ffd20a;
+    border: none;
+    height: 7em;
+}
+.atcb_button_wrapper{
+    background-color: #ffd20a;
+}
+.plantNameAndImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
