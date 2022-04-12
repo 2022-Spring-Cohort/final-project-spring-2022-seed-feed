@@ -13,7 +13,7 @@ export default function home(plants) {
  <div class="zipDiv">     
 <input alt="Enter a 5 digit zipcode here" type="text" maxlength="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\/g, '$1');" class="zipcode" placeholder="Enter Your Zipcode"> 
 </div>
-<img src="./img/gardenBtn.png" input type="submit" class="submitButton"> 
+<img alt="Click here to submit the form with your Zipcode and selected plants." src="./img/gardenBtn.png" input type="submit" class="submitButton"> 
 </div>
   <div class="checkBox">
     <fieldset class="checkList">

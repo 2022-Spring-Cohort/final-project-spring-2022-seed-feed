@@ -1,7 +1,26 @@
 *{
    box-sizing: border-box;
-margin: 0px;
+/* margin-right: 10px; */
 background-color: #f0f5df;
+}
+
+h1 {
+    cursor: default;
+}
+
+h2{
+    cursor: default;
+}
+
+h3 {
+    cursor: default;
+}
+
+p {
+    cursor: default;
+}
+.closeModal{
+    cursor: pointer;
 }
 
 
@@ -12,6 +31,7 @@ background-color: #f0f5df;
    display: flex; 
    flex-direction: column;
    align-items: center;
+   object-fit: contain;
 }
 .mainVegSection{
     display: flex; 
@@ -33,16 +53,17 @@ background-color: #f0f5df;
     justify-content: space-around;
     align-items: center;
     /* background-color: #F2780C; */
-    background-color: #e58c60;
+    background-color: #F7A055;
 }
 .navList li{
+    cursor: pointer;
     /* color: white; */
-    color: #ffffff;
+    color: #000000;
     display: flex;
     justify-content: center;
     font-size: x-large;
     /* background-color: #F2780C; */
-        background-color: #e58c60;
+        background-color: #F7A055;
 }
 .mainLogo{
     height: 11em;
@@ -101,9 +122,14 @@ background-color: #f0f5df;
 .banner{
     display: flex;
     justify-content: center;
-
+    object-fit: contain;
 }
 
+.footer{
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+}
 /* ***************** */
 /* CHECK BOX */
 
@@ -127,10 +153,27 @@ display: flex;
 padding-bottom: 5px;
 background-color: white;
 align-items: baseline;
+
 }
 
 .checkPlantName {
     transform: scale(1.8);
+    cursor: pointer;
+}
+
+.plantNameCheck{
+    cursor: pointer;
+}
+
+.checkPlantName{
+/* display: inline-block; */
+accent-color: #E58C60;
+/* visibility: visible; */
+}
+.checkPlantName:checked{
+/* display: inline-block; */
+background-color: #8AA81E;
+/* visibility: visible; */
 }
 
 
@@ -163,6 +206,7 @@ font-style: italic;
 }
 .submitButton{
     width: 20em;
+    cursor: pointer;
 
 }
 
@@ -172,14 +216,57 @@ font-style: italic;
 
 .resourcesSection{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .resourceTitle{
     display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.resourceElTitle {
+  display: flex;
+    justify-content: center;
+    background-color: inherit;
+    border-radius: 25px;
+}
+
+.resourceElTitle h2{
+    background-color: inherit;
+    color: black;
 }
 
 .resourceContent{
-    display: flex;
+    /* display: flex;
+    flex-direction: column; */
+            border-radius: 25px;
+            border: #4f6111 solid;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        /* background-color: #4f6111; */
+}
+
+.resourceContent h2{
+
+}
+
+
+
+.resourceImage {
+    object-fit: contain;
+    /* margin-right: 10px; */
+    margin: 20px;
+    /* border-radius: 20px; */
+}
+
+.seedDiv{
+                /* border-radius: 25px;
+            margin-left: 10px;
+        margin-bottom: 10px;
+        background-color: #4f6111; */
 }
 
 .homeSection{
@@ -187,6 +274,10 @@ font-style: italic;
     margin-top: 3em;
     padding: 0em 4em 0em 4em;
 
+
+
+
+    /* ******************* */
 }
 .zipcodeSection{
     display: flex;
@@ -202,6 +293,8 @@ font-style: italic;
 }
 .container {
 margin-top: 0px;
+margin-left: 10px;
+margin-right: 10px;
 }
 .seedDiv{
 display: flex;
@@ -236,6 +329,7 @@ label{
     /* border: none;
     background: none; */
     order: 2;
+
 }
 input {
     order: 1;
@@ -247,16 +341,23 @@ input {
 .allRecipes {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .allRecDiv {
     display: flex;
-    flex: 25%;
+    flex: 20%;
     padding: 20px;
-    border: #006992 solid;
+    border:  #4f6111 solid;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+        border-radius: 25px;
+        margin-left: 10px;
+        margin-bottom: 10px; 
+        /* background-color: #4f6111;*/
+
+    
 }
 
 @media screen and (max-width: 992px) {
@@ -273,10 +374,12 @@ input {
 
 .plantPhoto img {
     object-fit: contain;
+
 }
 
 .plantPhoto:hover {
     transform: scale(1.2);
+                cursor: pointer;
 }
 
 .plantPhotoSingle img {
@@ -301,10 +404,14 @@ input {
     display: flex;
     flex: 20%;
     padding: 20px;
-    border: #006992 solid;
+    border: #4f6111 solid;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+            border-radius: 25px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        /* background-color: #4f6111; */
 }
 
 @media screen and (max-width: 992px) {
@@ -326,3 +433,9 @@ input {
 .recipeImage:hover {
     transform: scale(1.2);
 }
+
+
+
+
+/* ****************** */
+

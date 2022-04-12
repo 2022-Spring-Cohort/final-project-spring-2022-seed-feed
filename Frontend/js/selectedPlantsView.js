@@ -20,7 +20,7 @@ ${plants
     <div class="singlePlant">
     <input type="hidden" class="plantId" value="${plant.id}">
 <h1 class="plantName">${plant.name}</h1>
-<img class="plantPhotoSingle" src=${plant.photoLink}>
+<img alt="Image of ${plant.name}" class="plantPhotoSingle" src=${plant.photoLink}>
 <p>${plant.careTips}</p>
 <h3 class="maturityDay"> Days to maturity: ${plant.maturityDays}</h3>
 <h3 class="height"> Height: ${plant.height} inches</h3>
