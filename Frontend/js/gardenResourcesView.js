@@ -16,17 +16,17 @@ export default function gardenResourcesView(){
 
             <div class="resourceContent">
             <h2>Baker Creek Seeds</h2>
-            <a href="https://www.rareseeds.com/"><img src="./img/baker_creek.jpg"></a>
+            <a href="https://www.rareseeds.com/" target="_blank" rel="noopener noreferrer"><img src="./img/baker_creek.jpg"></a>
              </div>
 
              <div class="resourceContent">
             <p>Johnny Seeds</p>
-            <a href="https://www.johnnyseeds.com/"><img src="./img/johnnys.jpg"></a>
+            <a href="https://www.johnnyseeds.com/" target="_blank" rel="noopener noreferrer"><img src="./img/johnnys.jpg"></a>
             </div>
 
             <div class="resourceContent">
             <p>Botanical Interests</p>
-            <a href="https://www.botanicalinterests.com/"><img src="./img/botanical_interests.jpg"></a>
+            <a href="https://www.botanicalinterests.com/" target="_blank" rel="noopener noreferrer"><img src="./img/botanical_interests.jpg"></a>
             </div>
          </div>
     
@@ -37,13 +37,13 @@ export default function gardenResourcesView(){
         
             <div class="seedStart">
         
-                <a href="https://joegardener.com/podcast/037-starting-seeds-indoors-pt-1/"><img src="./img/joe_gardner_seedstarting.jpg"></a>
+                <a href="https://joegardener.com/podcast/037-starting-seeds-indoors-pt-1/" target="_blank" rel="noopener noreferrer"><img src="./img/joe_gardner_seedstarting.jpg"></a>
             <p>Joe Gardener- Starting Seeds Indoors</p>
             
-            <a href="https://www.almanac.com/content/starting-seeds-indoors"><img src="./img/almanac_seed_starting.jpg"></a>
+            <a href="https://www.almanac.com/content/starting-seeds-indoors" target="_blank" rel="noopener noreferrer"><img src="./img/almanac_seed_starting.jpg"></a>
             <p>Farmers Almanac- Starting Seeds</p>
         
-                <a href="https://www.burpee.com/blog/indoor-seed-starting_article10002.html"><img src="./img/burpee_seedstart.jpg"></a>
+                <a href="https://www.burpee.com/blog/indoor-seed-starting_article10002.html" target="_blank" rel="noopener noreferrer"><img src="./img/burpee_seedstart.jpg"></a>
             <p>Indoor Seed Starting</p>
         
         </div>
@@ -54,13 +54,13 @@ export default function gardenResourcesView(){
         
         <div class="canning">
         
-            <a href="https://www.almanac.com/canning-for-beginners"><img src="./img/almanac_canning.jpg"></a>
+            <a href="https://www.almanac.com/canning-for-beginners" target="_blank" rel="noopener noreferrer"><img src="./img/almanac_canning.jpg"></a>
             <p>Canning for Beginners</p>
         
-            <a href="https://www.freshpreserving.com/"><img src="./img/ball_canning.jpg"></a>
+            <a href="https://www.freshpreserving.com/" target="_blank" rel="noopener noreferrer"><img src="./img/ball_canning.jpg"></a>
             <p>Ball Canning Website</p>
         
-            <a href="https://www.youtube.com/watch?v=NPAUnhEPqoc"><img src="./img/canning_video.jpg"></a>
+            <a href="https://www.youtube.com/watch?v=NPAUnhEPqoc" target="_blank" rel="noopener noreferrer"><img src="./img/canning_video.jpg"></a>
             <p>Canning 101</p>
         
         </div>
@@ -71,13 +71,13 @@ export default function gardenResourcesView(){
         
         <div class="soilDiv">
         
-            <a href="https://charlesdowding.co.uk/start-here/"><img src="./img/no_dig.jpg"></a>
+            <a href="https://charlesdowding.co.uk/start-here/" target="_blank" rel="noopener noreferrer"><img src="./img/no_dig.jpg"></a>
             <p>No Dig Gardening</p>
         
-            <a href="https://www.ars.usda.gov/oc/tips-for-healthy-soil-in-your-backyard-garden/"><img src="./img/usda.jpg"></a>
+            <a href="https://www.ars.usda.gov/oc/tips-for-healthy-soil-in-your-backyard-garden/" target="_blank" rel="noopener noreferrer"><img src="./img/usda.jpg"></a>
             <p>Healthy Soil Tips</p>
 
-            <a href="https://www.gardeners.com/how-to/building-healthy-soil/5060.html"><img src="./img/healthy_soil.jpg"></a>
+            <a href="https://www.gardeners.com/how-to/building-healthy-soil/5060.html" target="_blank" rel="noopener noreferrer"><img src="./img/healthy_soil.jpg"></a>
             <p>Building Healthy Soil</p>
         
         </div>
