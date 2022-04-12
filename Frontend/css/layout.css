@@ -127,6 +127,26 @@ padding-bottom: 5px;
 background-color: white;
 align-items: baseline;
 }
+
+.checkPlantName {
+    transform: scale(1.8);
+}
+
+/* .checkPlantName:checked {
+    background: #4f6111;
+    color: aqua;
+} */
+
+
+input[type="checkbox"]:checked  {
+  background: #3d404e;
+  color: #666;
+}
+
+
+
+
+
 .textHome{
     display: flex;
     align-items: center;
