@@ -326,3 +326,39 @@ input {
 .recipeImage:hover {
     transform: scale(1.2);
 }
+
+.frostDate{
+    display: flex;
+    justify-content: center;
+}
+.backBtn{
+    height: 2.5em;
+    padding-top: .5em;
+    padding-left: 2em;
+}
+.backButton{
+    display: flex;
+    flex-direction: flex-start;
+}
+
+.singlePlant{
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+.careTips{
+    width: 25em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.companionDiv{
+    width: 10em;
+    display: flex;
+    align-items: center;
+}
+.companion{
+    display: flex;
+    align-content: center; 
+}

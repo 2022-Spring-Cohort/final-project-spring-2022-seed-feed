@@ -33,3 +33,34 @@ nav {
     margin: 0px;
  
 }
+.plantPhotoSingle{
+   width: 250px;
+   height: auto;
+}
+.plantName{
+    max-width: 240px;
+}
+.plantDetails{
+    width: 22em;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.clickForRecipeButton{
+   width: 10em;
+}
+.plantRecButton{
+    width: 11em;  
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+.clickForRecipeButton{
+    height: 5em;
+}
+.plantCalBtn{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
