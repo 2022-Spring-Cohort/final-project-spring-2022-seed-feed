@@ -33,16 +33,16 @@ background-color: #f0f5df;
     justify-content: space-around;
     align-items: center;
     /* background-color: #F2780C; */
-    background-color: #e58c60;
+    background-color: #ffd20a;
 }
 .navList li{
     /* color: white; */
-    color: #ffffff;
+    color: #4A5817;
     display: flex;
     justify-content: center;
     font-size: x-large;
     /* background-color: #F2780C; */
-        background-color: #e58c60;
+        background-color: #ffd20a;
 }
 .mainLogo{
     height: 11em;
@@ -325,4 +325,58 @@ input {
 
 .recipeImage:hover {
     transform: scale(1.2);
+}
+
+.frostDate{
+    display: flex;
+    justify-content: center;
+}
+.backBtn{
+    height: 2.5em;
+    padding-top: .5em;
+    padding-left: 2em;
+}
+.backButton{
+    display: flex;
+justify-content: space-between;
+}
+
+.singlePlant{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    margin: 2em 8em 2em 8em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4f6111;
+    border-radius: 25px;
+    padding: 1em 1em 1em 1em;
+  
+
+}
+.singlePlant *{
+    background-color: white;
+}
+.careTips{
+    width: 25em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-left: 10px;
+
+}
+
+.companionDiv{
+    width: 10em;
+    display: flex;
+    align-items: center;
+}
+.companion{
+    display: flex;
+    align-content: center; 
+}
+.weatherDiv{
+    display: flex;
+    justify-content: center;
 }
