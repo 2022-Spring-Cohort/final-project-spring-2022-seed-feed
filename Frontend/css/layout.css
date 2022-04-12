@@ -1,9 +1,9 @@
 *{
    box-sizing: border-box;
-   
-margin-top: 0px;
+margin: 0px;
 background-color: #f0f5df;
 }
+
 
 .vegImg{
     height: 20em;
@@ -23,8 +23,6 @@ background-color: #f0f5df;
 
 /* *********************** */
 /* NAV BAR */
-
-
 
 .navList{
 
@@ -92,11 +90,12 @@ background-color: #f0f5df;
     height: 17em;
     margin-bottom: 0px;
 }
-.footer{
+/* footer{
     display: flex;
     justify-content: center; 
     margin-bottom: 0px;
-}
+    background-color: #4A5817;
+} */
 
 .banner{
     display: flex;
@@ -111,8 +110,8 @@ background-color: #f0f5df;
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
-height: 60em;
-width: 53em;
+height: 63em;
+width: 55em;
 margin-left: 2em;
 justify-content: space-around;
 padding-top: 1.5em;
@@ -128,18 +127,11 @@ padding-bottom: 5px;
 background-color: white;
 align-items: baseline;
 }
-
-
-
-
 .textHome{
     display: flex;
     align-items: center;
     justify-content: center;
-
-
 }
-
 .homeText{
     padding-top: 1em;
     background-color: #4f6111;
@@ -149,8 +141,6 @@ align-items: baseline;
     border-radius: 25px;
     text-align: center;
     font-size: 30px;
-
-
 }
 .goodbye{
   display: flex;
@@ -162,13 +152,11 @@ font-style: italic;
     display: flex;
     align-items: center;
     width: fit-content;
-    
 
 }
 .submitButton{
-    
     width: 20em;
-    /* margin-top: 3em; */
+
 }
 
 /* ********************** */
@@ -187,19 +175,12 @@ font-style: italic;
     display: flex;
 }
 
-
-
-
-
-
-
 .homeSection{
     display: flex;
     margin-top: 3em;
     padding: 0em 4em 0em 4em;
 
 }
-
 .zipcodeSection{
     display: flex;
     width: 30em;
@@ -243,10 +224,6 @@ display: flex;
         margin-left: 30px;
     }
 } */
-
-
-
-
 
 label{
     /* border: none;

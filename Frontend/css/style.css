@@ -4,15 +4,11 @@
    background-color: white;
    width: 10em;
    border-radius: 10px;
-   padding-left: 1em;
+   padding-left: .25em;
    margin-bottom: 2em;
-   margin-top: 1em;
-
-   
-  
+   margin-top: 1em;  
 }
 *{
-    /* font-family: 'Anybody', cursive; */
     font-family: 'Poppins', sans-serif;
     color: #465902;
 }
@@ -27,15 +23,13 @@
     font-size: 22px;
 
 }
-/* .checkPlantName{
-    font-size: large;
-} */
 
 nav {
-    /* background-color: #F2780C; */
-        background-color: #e58c60;
+
+    background-color: #e58c60;
     display: flex;
     justify-content: center;
     height: 3em;
+    margin: 0px;
  
 }
