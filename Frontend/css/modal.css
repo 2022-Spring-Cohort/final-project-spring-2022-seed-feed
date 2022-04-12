@@ -13,10 +13,10 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 .modal-content, .aboutusmodal-content {
-    background-color: #DEE8EC;
+    background-color: #f0f5df;
     margin: auto;
     padding: 20px;
-    border: 6px solid #6BA9AC;
+    border: 6px solid #4A5817;
     width: 40%;
     border-radius: 10px;
     height: 40%;

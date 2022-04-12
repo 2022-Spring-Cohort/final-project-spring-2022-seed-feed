@@ -36,8 +36,8 @@ return `
                                         <p class="aboutText">Full-Stack Software and Web Developer</p>
                                     </div>
                                     <div class="logos">
-                                        <a href="https://github.com/benjamin-gibbs-2"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
-                                        <a href="https://www.linkedin.com/in/benjamin-gibbs2/"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
+                                        <a href="https://github.com/benjamin-gibbs-2" target="_blank"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
+                                        <a href="https://www.linkedin.com/in/benjamin-gibbs2/" target="_blank"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
                                     </div>
                             </section>
                             <section class="person">
@@ -47,8 +47,8 @@ return `
                                         <p class="aboutText">Full-Stack Software and Web Developer</p>
                                     </div>
                                     <div class="logos">
-                                        <a href="https://github.com/AveryCS"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
-                                        <a href="https://www.linkedin.com/in/averycs/"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
+                                        <a href="https://github.com/AveryCS" target="_blank"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
+                                        <a href="https://www.linkedin.com/in/averycs/" target="_blank"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
                                     </div>
                             </section>
                             <section class="person">
@@ -58,8 +58,8 @@ return `
                                         <p class="aboutText">Full-Stack Software and Web Developer & Compassion Enthusiast</p>
                                     </div>
                                     <div class="logos">
-                                        <a href="https://github.com/mccurdyr"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
-                                        <a href="https://www.linkedin.com/in/mccurdyr/"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
+                                        <a href="https://github.com/mccurdyr" target="_blank"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
+                                        <a href="https://www.linkedin.com/in/mccurdyr/" target="_blank"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
                                     </div>
                             </section>
                             <section class="person">
@@ -69,8 +69,8 @@ return `
                                         <p class="aboutText">Full-Stack Software and Web Developer</p>
                                     </div>
                                     <div class="logos">
-                                        <a href="https://github.com/jenniferaadams"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
-                                        <a href="https://www.linkedin.com/in/jenniferannadams/"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
+                                        <a href="https://github.com/jenniferaadams" target="_blank"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
+                                        <a href="https://www.linkedin.com/in/jenniferannadams/" target="_blank"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
                                     </div>
                             </section>
                             <section class="person">
@@ -80,8 +80,8 @@ return `
                                         <p class="aboutText">Full-Stack Software and Web Developer</p>
                                     </div>
                                     <div class="logos">
-                                        <a href="https://github.com/Shoko1321"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
-                                        <a href="https://www.linkedin.com/in/dylan-creech1/"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
+                                        <a href="https://github.com/Shoko1321" target="_blank"><img class="logo" alt="GitHub Logo" src="./img/GitHubLogo.png"></a>
+                                        <a href="https://www.linkedin.com/in/dylan-creech1/" target="_blank"><img class="logo" alt="LinkedIn Logo" src="./img/LinkedInLogo.png"></a>
                                     </div>
                                 
                         </section>
