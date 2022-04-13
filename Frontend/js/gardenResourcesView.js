@@ -1,13 +1,15 @@
 export default function gardenResourcesView() {
     return `
-<h1>Gardening Resources</h1>
 
 
 
+    <img class="backToHomeBtn" src="/img/back_arrow.png">
 <section class="resourcesSection">
 <div class="resourceSectionDivCHANGEMYNAME">
     <div class="resourceTitle">
         <h1>Our Favorite Places to Buy Seeds</h1>
+     
+   
     </div>
 
     <div class="resourceBlockSection">
@@ -45,7 +47,7 @@ export default function gardenResourcesView() {
     <br />
     <div class="resourceSectionDivCHANGEMYNAME">
     <div class="resourceTitle">
-    <h1>Starting your garden from seeds</h1>
+    <h1>Starting Your Garden From Seed</h1>
     </div>
 
     <div class="resourceBlockSection">
@@ -158,7 +160,7 @@ export default function gardenResourcesView() {
 </div>
     <br />
 </section>
-<button class="backToHomeBtn">Back to home</button>
+
 
 
     `;
