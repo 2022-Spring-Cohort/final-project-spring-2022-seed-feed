@@ -67,7 +67,7 @@ ${plants
   .join("")}
 
 <div class="weatherDiv">
-  <p class="stationDisplay">All data is pulled using your nearest weather station: ${((stationName.toLowerCase(stationName)))}</p>
+  <p class="stationDisplay">Weather data is pulled using your nearest weather station: ${((stationName.toLowerCase(stationName)))}</p>
 
 </div>`;
 
