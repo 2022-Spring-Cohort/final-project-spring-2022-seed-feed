@@ -26,7 +26,9 @@ ${plants
     <input type="hidden" class="plantId" value="${plant.id}">
 <div class="plantNameAndImg">
     <h2 class="plantName">${plant.name}</h2>
-<img class="plantPhotoSingle" src=${plant.photoLink}>
+<img alt="Image of ${plant.name}" class="plantPhotoSingle" src=${
+      plant.photoLink
+    }>
 </div>
 <div class="careTips">
 <h2>Care Tips:</h2>
@@ -53,7 +55,11 @@ ${plants
 </div>
 
 <div class="plantCalBtn">
-<button id="default-button">${calendarButton(indoorStartFrag(plant, d), plant, d)}</button>
+<button id="default-button">${calendarButton(
+      indoorStartFrag(plant, d),
+      plant,
+      d
+    )}</button>
 </div>
 </div>
 </div>`;
