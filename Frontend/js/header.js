@@ -5,7 +5,7 @@ return `
 <img alt="Header banner image of Vegetables" class="bannerImage" src="img/veg-top-2.png">
 </div>
 <div class="logoDiv">
-<img class="mainLogo" src="/img/logo.png">
+<img alt="Styalized Logo for Seed & Feed" class="mainLogo" src="/img/logo.png">
 </div>
 
 
