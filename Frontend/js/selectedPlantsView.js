@@ -14,21 +14,20 @@ return `
 <button onclick="window.print()" class="printBtn">Print this Page</button>
 </div>
 <div class="frostDate">
-<h2>Your average last frost date is ${d.toDateString()}</h2>
+<h2>Your last likely frost date is ${d.toDateString()}</h2>
+</div> 
+<div class="weatherDiv">
+  <p class="stationDisplay">All data is pulled using your nearest weather station: ${((stationName.toLowerCase(stationName)))}</p>
 </div>
-
 <div class="plantInfo">
 ${plants
   .map((plant) => {
     return `
     <div class="singlePlant">
-    <div class="topPlantDiv">
     <input type="hidden" class="plantId" value="${plant.id}">
 <div class="plantNameAndImg">
     <h2 class="plantName">${plant.name}</h2>
-<img alt="Image of ${plant.name}" class="plantPhotoSingle" src=${
-      plant.photoLink
-    }>
+<img class="plantPhotoSingle" src=${plant.photoLink}>
 </div>
 <div class="careTips">
 <h2>Care Tips:</h2>
@@ -43,9 +42,7 @@ ${plants
 <h3>Indoor start date: ${indoorCalcFrag(plant, d)}</h3>
 <h3>Outdoor start date: ${d.toDateString()}</h3>
 </div>
-</div>
 
-<div class="bottomPlantDiv">
 <div class="companionDiv">
 <p class="companion">Recommended Companion Plants: ${plant.companionPlants}</p>
 </div>
@@ -55,21 +52,14 @@ ${plants
 </div>
 
 <div class="plantCalBtn">
-<button id="default-button">${calendarButton(
-      indoorStartFrag(plant, d),
-      plant,
-      d
-    )}</button>
+<button id="default-button">${calendarButton(indoorStartFrag(plant, d), plant, d)}</button>
 </div>
-</div>
+
 </div>`;
   })
   .join("")}
 
-<div class="weatherDiv">
-  <p class="stationDisplay">Weather data is pulled using your nearest weather station: ${((stationName.toLowerCase(stationName)))}</p>
-
-</div>`;
+`;
 
 
 

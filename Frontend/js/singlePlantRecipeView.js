@@ -1,6 +1,6 @@
 export default function singlePlantRecipeView(recipes){
 return `
-<button class ="backBtn">Back Button</button>
+<img class ="backBtn" src="/img/back_arrow.png">
 
 <div class="singleRecipes">
 ${recipes.hits

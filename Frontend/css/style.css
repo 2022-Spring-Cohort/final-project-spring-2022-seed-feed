@@ -44,6 +44,7 @@ nav {
 }
 .plantName{
     max-width: 240px;
+    text-align: center;
 }
 .plantDetails{
     width: 22em;
@@ -51,6 +52,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     background-color: white;
+    text-align: center;
 }
 .clickForRecipeButton{
    width: 10em;
@@ -129,4 +131,9 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.plantInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

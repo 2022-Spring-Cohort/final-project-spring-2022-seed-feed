@@ -1,6 +1,6 @@
 export default function allRecipesView(plants){
 return`
-<button class ="backBtn">Back Button</button>
+<img class ="backBtn" src="/img/back_arrow.png">
 <div class="allRecipes">
 
 ${plants.map(plant => {
