@@ -97,6 +97,7 @@ p {
     height: 10em;
         max-width: 240px;
         object-fit: fill;
+        border-radius: 5px;
 }
 
 .bannerImage{
@@ -165,6 +166,7 @@ margin-left: .75em;
 /* display: inline-block; */
 accent-color: #E58C60;
 /* visibility: visible; */
+margin-right: .25em;
 }
 .checkPlantName:checked{
 /* display: inline-block; */
@@ -232,14 +234,18 @@ margin-bottom: 1em;
     display: flex;
     align-content: center;
     justify-content: space-around;
+    padding-bottom: .5em;
+    margin-top: 3em;
+    border-bottom: #E58C60 solid;
+    margin-bottom: 2em;
 }
+
 
 .resourceTitle h1{
 /* color: #ffd20a; */
 /* color: white; */
 background-color: inherit;
 font-size: 32px;
-text-decoration-line:underline;
 /* font-weight: 200; */
 }
 
@@ -248,6 +254,7 @@ text-decoration-line:underline;
     justify-content: center;
     background-color: inherit;
     border-radius: 25px;
+    margin-top: .5em;
 }
 
 .resourceElTitle h2{
@@ -293,19 +300,26 @@ text-decoration-line:underline;
     /* margin-right: 10px; */
     margin: 20px;
     /* border-radius: 20px; */
+   
+}
+.resourceContent:hover{
+    transform: scale(1.1);
+                cursor: pointer;
+
 }
 
 .resourceBlockSection{
     display: flex;
-                border-radius: 25px;
+                /* border-radius: 25px; */
             margin-left: 10px;
         margin-bottom: 10px;
         /* background-color: #4f6111; */
-        background-color: #465902;
-        padding-right: 10px
+        /* background-color: #ffffff; */
+        padding-right: 10px;
+       
 }
-.seedStart{
-
+.resourceBlockSection *{
+    background-color: #ffffff;  
 }
 
 .homeSection{
@@ -348,8 +362,8 @@ text-decoration-line:underline;
 }
 .container {
 margin-top: 0px;
-margin-left: 10px;
-margin-right: 10px;
+margin-left: 0px;
+margin-right: 0px;
 }
 
 .stationDisplay{
@@ -384,17 +398,18 @@ input {
 .allRecipes {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 20em;
+    margin-right: 20em;
 
 }
+
 
 .allRecDiv {
     display: flex;
     flex: 20%;
     padding: 20px;
     border:  #4f6111 solid;
-    border-width: 2px;
+    border-width: 3px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -427,7 +442,7 @@ input {
 
 }
 
-.plantPhoto:hover {
+.allRecDiv:hover {
     transform: scale(1.1);
                 cursor: pointer;
 }
@@ -440,6 +455,7 @@ input {
     height: 10em;
         /* max-width: 250px; */
         object-fit: fill;
+        border-radius: 5px;
 }
 /* ****************************** */
 /*  singlePlantRecipeView BELOW           */
@@ -448,6 +464,9 @@ input {
 .singleRecipes {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 20em;
+    margin-right: 20em;
+    
 }
 
 .singleRecipeDiv {
@@ -459,9 +478,17 @@ input {
     justify-content: space-between;
     align-items: center;
             border-radius: 25px;
-        margin-left: 10px;
-        margin-bottom: 10px;
-        /* background-color: #4f6111; */
+        /* margin-left: 10px; */
+        /* margin-bottom: 10px; */
+        background-color: #ffffff;
+        margin-left: 2em;
+        margin-bottom: 3em; 
+        text-align: center;
+        border-width: 3px;
+
+}
+.singleRecipeDiv *{
+    background-color: #ffffff;
 }
 
 @media screen and (max-width: 992px) {
@@ -480,7 +507,7 @@ input {
     object-fit: contain;
 }
 
-.recipeImage:hover {
+.singleRecipeDiv:hover {
     transform: scale(1.2);
 }
 
@@ -489,6 +516,11 @@ input {
     justify-content: center;
 }
 .backBtn{
+    height: 2.5em;
+    padding-top: .5em;
+    padding-left: 3em;
+}
+.backToHomeBtn{
     height: 2.5em;
     padding-top: .5em;
     padding-left: 2em;
@@ -505,7 +537,7 @@ justify-content: space-between;
     background-color: white;
     margin: 2em 8em 2em 8em;
     border-style: solid;
-    border-width: 2px;
+    border-width: 3px;
     border-color: #4f6111;
     border-radius: 25px;
     padding: 1em 1em 1em 1em;
