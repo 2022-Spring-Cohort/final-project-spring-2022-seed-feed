@@ -44,6 +44,7 @@ nav {
 }
 .plantName{
     max-width: 240px;
+    text-align: center;
 }
 .plantDetails{
     width: 22em;
