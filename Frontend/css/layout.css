@@ -1,7 +1,7 @@
 *{
    box-sizing: border-box;
-/* margin-right: 10px; */
-background-color: #f0f5df;
+    margin: 0px;
+    background-color: #f0f5df;
 }
 
 h1 {
@@ -45,8 +45,6 @@ p {
 /* NAV BAR */
 
 .navList{
-
-    margin-top: .5em;
     display: flex;
     list-style-type: none;
     width: 90%;
@@ -108,16 +106,14 @@ p {
 }
 
 .bottomImg{
-    height: 17em;
-    margin-bottom: 0px;
-    
+    height: 10em;
+    margin-bottom: 0px;  
 }
-/* footer{
+.footer{
     display: flex;
     justify-content: center; 
     margin-bottom: 0px;
-    background-color: #4A5817;
-} */
+}
 
 .banner{
     display: flex;
@@ -138,7 +134,7 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: column;
 height: 63em;
-width: 55em;
+width: 57em;
 margin-left: 2em;
 justify-content: space-around;
 padding-top: 1.5em;
@@ -153,7 +149,7 @@ display: flex;
 padding-bottom: 5px;
 background-color: white;
 align-items: baseline;
-
+margin-left: .75em;
 }
 
 .checkPlantName {
@@ -190,12 +186,14 @@ background-color: #8AA81E;
     padding-right: 1em;
     border-radius: 25px;
     text-align: center;
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 .goodbye{
   display: flex;
 justify-content: center;
 font-style: italic;
+margin-top: 1em;
+margin-bottom: 1em;
 }
 
 .checkBox{
@@ -207,8 +205,18 @@ font-style: italic;
 .submitButton{
     width: 20em;
     cursor: pointer;
+    border: none;
+    border-radius: 25px;
 
 }
+.submitButton:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+
+.submitButton:hover {
+    transform: scale(1.1);
+  }
 
 /* ********************** */
 /* Resources Section? */
@@ -286,10 +294,26 @@ font-style: italic;
     background-color: #4f6111;
     align-items: center;
     border-radius: 25px;
+    justify-content: space-around;
+    padding-top: 2em;
+    padding-bottom: 3em;
   
 }
 .zipDiv{
     background-color: #4f6111; 
+}
+.homeBottomTextDiv{
+    background-color: #4f6111; 
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.homeBtmTxt{
+    background-color: #4f6111; 
+    color: #ffffff;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .container {
 margin-top: 0px;
@@ -450,6 +474,7 @@ justify-content: space-between;
 
 .singlePlant{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     background-color: white;
     margin: 2em 8em 2em 8em;
@@ -458,11 +483,14 @@ justify-content: space-between;
     border-color: #4f6111;
     border-radius: 25px;
     padding: 1em 1em 1em 1em;
-  
-
 }
 .singlePlant *{
     background-color: white;
+}
+@media screen and (max-width: 600px){
+    .singlePlant {
+        flex-direction: column;
+    }
 }
 .careTips{
     width: 25em;
@@ -472,6 +500,15 @@ justify-content: space-between;
     justify-content: center;
     margin-left: 10px;
 
+}
+.topPlantDiv{
+    display: flex;
+    justify-content: center;
+
+}
+.bottomPlantDiv{
+    display: flex;
+    justify-content: center;
 }
 
 .companionDiv{

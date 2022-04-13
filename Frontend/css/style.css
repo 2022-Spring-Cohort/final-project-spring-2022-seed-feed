@@ -11,6 +11,7 @@
 *{
     font-family: 'Poppins', sans-serif;
     color: #465902;
+    margin: 0px;
 }
 .checkbox_input{
     font-size: large;
@@ -31,6 +32,10 @@ nav {
     justify-content: center;
     height: 3em;
     margin: 0px;
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4f6111;
  
 }
 .plantPhotoSingle{
@@ -58,8 +63,6 @@ nav {
   text-align: center;
   text-decoration: none;
   user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
 }
 
 .clickForRecipeButton:hover {
@@ -99,23 +102,29 @@ nav {
     margin-right: 3em;
     height: 2.5em;
     margin-top: .5em;
+    border: 2px solid #465902;
+    border-radius: 30px;
+    box-shadow: #465902 4px 4px 0 0;
+    color: #465902;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
 }
-.blankButtonDiv{
 
-height: 6em;
-background-color:#e58c60; 
-display: flex; 
-align-items: center; 
-justify-content: center;
-}
 #default-button{
-    background-color: #ffd20a;
+    /* background-color: #ffd20a; */
     border: none;
     height: 7em;
 }
-.atcb_button_wrapper{
-    background-color: #ffd20a;
-}
+/* .atcb_button{
+    border: 2px solid #465902;
+    border-radius: 30px;
+    box-shadow: #465902 4px 4px 0 0;
+    color: #465902;
+    cursor: pointer;
+} */
 .plantNameAndImg{
     display: flex;
     flex-direction: column;
