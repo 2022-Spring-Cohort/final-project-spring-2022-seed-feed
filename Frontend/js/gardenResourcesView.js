@@ -5,11 +5,12 @@ export default function gardenResourcesView() {
 
 
 <section class="resourcesSection">
+<div class="resourceSectionDivCHANGEMYNAME">
     <div class="resourceTitle">
-        <h2>Our Favorite Places to Buy Seeds</h2>
+        <h1>Our Favorite Places to Buy Seeds</h1>
     </div>
 
-    <div class="seedDiv">
+    <div class="resourceBlockSection">
         <div class="resourceContent">
             <div class="resourceElTitle">
                 <h2>Baker Creek Seeds</h2>
@@ -40,13 +41,14 @@ export default function gardenResourcesView() {
                     </div>
         </div>
     </div>
-
+</div>
     <br />
+    <div class="resourceSectionDivCHANGEMYNAME">
     <div class="resourceTitle">
-    <h2>Starting your garden from seeds</h2>
+    <h1>Starting your garden from seeds</h1>
     </div>
 
-    <div class="seedStart">
+    <div class="resourceBlockSection">
         <div class="resourceContent">
                     <div class="resourceElTitle">
             <h2>Joe Gardener- Starting Seeds Indoors</h2>
@@ -77,12 +79,13 @@ export default function gardenResourcesView() {
                 </div>
         </div>
     </div>
-
-    <br />
-    <div class="resourceTitle">
-    <h2>Canning Your Harvest</h2>
 </div>
-    <div class="canning">
+    <br />
+    <div class="resourceSectionDivCHANGEMYNAME">
+    <div class="resourceTitle">
+    <h1>Canning Your Harvest</h1>
+</div>
+    <div class="resourceBlockSection">
         <div class="resourceContent">
                     <div class="resourceElTitle">
             <h2>Canning for Beginners</h2>
@@ -113,12 +116,13 @@ export default function gardenResourcesView() {
                     </div>
         </div>
     </div>
-
-    <br />
-    <div class="resourceTitle">
-        <h2>All About Soil</h2>
 </div>
-    <div class="soilDiv">
+    <br />
+    <div class="resourceSectionDivCHANGEMYNAME">
+    <div class="resourceTitle">
+        <h1>All About Soil</h1>
+</div>
+    <div class="resourceBlockSection">
 
         <div class="resourceContent">
                     <div class="resourceElTitle">
@@ -151,7 +155,7 @@ export default function gardenResourcesView() {
                 </div>
         </div>
     </div>
-
+</div>
     <br />
 </section>
 <button class="backToHomeBtn">Back to home</button>

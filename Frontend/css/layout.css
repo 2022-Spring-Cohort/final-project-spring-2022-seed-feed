@@ -219,8 +219,8 @@ margin-bottom: 1em;
   }
 
 /* ********************** */
-/* Resources Section? */
-
+/* Resources Section  */
+/* ********************** */
 
 .resourcesSection{
     display: flex;
@@ -234,6 +234,15 @@ margin-bottom: 1em;
     justify-content: space-around;
 }
 
+.resourceTitle h1{
+/* color: #ffd20a; */
+/* color: white; */
+background-color: inherit;
+font-size: 32px;
+text-decoration-line:underline;
+/* font-weight: 200; */
+}
+
 .resourceElTitle {
   display: flex;
     justify-content: center;
@@ -243,7 +252,7 @@ margin-bottom: 1em;
 
 .resourceElTitle h2{
     background-color: inherit;
-    color: black;
+    color:#465902;
 }
 
 .resourceContent{
@@ -257,11 +266,27 @@ margin-bottom: 1em;
         /* background-color: #4f6111; */
 }
 
-.resourceContent h2{
+/* .seedDiv{
 
+} */
+.seedStart{
+    display: flex;
+}
+.canning{
+    display: flex;
+}
+.soilDiv{
+    display: flex;
 }
 
-
+.resourceSectionDivCHANGEMYNAME {
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 25px; */
+    /* border: #465908 solid; */
+    align-items: center;
+    /* background-color: #465908; */
+}
 
 .resourceImage {
     object-fit: contain;
@@ -270,11 +295,17 @@ margin-bottom: 1em;
     /* border-radius: 20px; */
 }
 
-.seedDiv{
-                /* border-radius: 25px;
+.resourceBlockSection{
+    display: flex;
+                border-radius: 25px;
             margin-left: 10px;
         margin-bottom: 10px;
-        background-color: #4f6111; */
+        /* background-color: #4f6111; */
+        background-color: #465902;
+        padding-right: 10px
+}
+.seedStart{
+
 }
 
 .homeSection{
@@ -319,18 +350,6 @@ margin-bottom: 1em;
 margin-top: 0px;
 margin-left: 10px;
 margin-right: 10px;
-}
-.seedDiv{
-display: flex;
-}
-.seedStart{
-    display: flex;
-}
-.canning{
-    display: flex;
-}
-.soilDiv{
-    display: flex;
 }
 
 .stationDisplay{
