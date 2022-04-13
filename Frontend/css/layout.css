@@ -474,7 +474,7 @@ justify-content: space-between;
 
 .singlePlant{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: white;
     margin: 2em 8em 2em 8em;
@@ -487,11 +487,11 @@ justify-content: space-between;
 .singlePlant *{
     background-color: white;
 }
-@media screen and (max-width: 600px){
+/* @media screen and (max-width: 600px){
     .singlePlant {
         flex-direction: column;
-    }
-}
+    } */
+
 .careTips{
     width: 25em;
     display: flex;
@@ -504,11 +504,14 @@ justify-content: space-between;
 .topPlantDiv{
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
 
 }
 .bottomPlantDiv{
     display: flex;
     justify-content: center;
+    padding-top: 1em;
+    justify-content: space-evenly;
 }
 
 .companionDiv{
