@@ -22,6 +22,7 @@ ${plants
   .map((plant) => {
     return `
     <div class="singlePlant">
+    <div class="topPlantDiv">
     <input type="hidden" class="plantId" value="${plant.id}">
 <div class="plantNameAndImg">
     <h2 class="plantName">${plant.name}</h2>
@@ -40,7 +41,9 @@ ${plants
 <h3>Indoor start date: ${indoorCalcFrag(plant, d)}</h3>
 <h3>Outdoor start date: ${d.toDateString()}</h3>
 </div>
+</div>
 
+<div class="bottomPlantDiv">
 <div class="companionDiv">
 <p class="companion">Recommended Companion Plants: ${plant.companionPlants}</p>
 </div>
@@ -52,7 +55,7 @@ ${plants
 <div class="plantCalBtn">
 <button id="default-button">${calendarButton(indoorStartFrag(plant, d), plant, d)}</button>
 </div>
-
+</div>
 </div>`;
   })
   .join("")}

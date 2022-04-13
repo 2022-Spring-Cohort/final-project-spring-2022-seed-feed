@@ -14,10 +14,10 @@ return `
 
 <nav>
 <ul class="navList">
-   <li title="Home Button. Click to return to the Home View" class ="homeBtn">Home</li>
-   <li title="Recipes Button. Click here to see all the recipes." class="allRecipesButton">Recipes</li>
-   <li title="About Us Button. Click here to meet the Developers of this site." class="aboutUsButton">About</li>
-   <li title="Garden Resourcse Button. Click here to see some handy infromation." class="gardenResources">Gardening Resources</li>
+   <li title="Home Button. Click to return to the Home View" class ="homeBtn">HOME</li>
+   <li title="Recipes Button. Click here to see all the recipes." class="allRecipesButton">RECIPES</li>
+   <li title="About Us Button. Click here to meet the Developers of this site." class="aboutUsButton">ABOUT</li>
+   <li title="Garden Resourcse Button. Click here to see some handy infromation." class="gardenResources">GARDEN RESOURCES</li>
     </ul>  
      </nav>
 

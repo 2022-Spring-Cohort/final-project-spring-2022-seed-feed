@@ -6,14 +6,17 @@ export default function home(plants) {
       
   <div class="homeSection">    
 <div class="zipcodeSection">
-<h1 class="homeText" style="line-height:2">
-       Enter your zip code, choose the plants you’d like for your garden, and voilà! <br><br>We’ll tell you if you should begin the seeds indoors based on your area and when you should plant them outside.
+<h2 class="homeText" style="line-height:2">
+       Looking to plant a garden, but don't know where to start? Let us help you plan your perfect plot! <br><br>Enter your zip code and choose the plants you’d like for your garden:
        <br>
-      </h1>
+      </h2>
  <div class="zipDiv">     
 <input alt="Enter a 5 digit zipcode here" type="text" maxlength="5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\/g, '$1');" class="zipcode" placeholder="Enter Your Zipcode"> 
 </div>
-<img src="./img/gardenBtn.png" input type="submit" class="submitButton"> 
+<img src="./img/gardenBtn.png" input type="submit" class="submitButton">
+<div class="homeBottomTextDiv">
+<h2 class="homeBtmTxt" style="line-height:2">We’ll tell you if you should begin the seeds indoors or plant outside based on your area.</h2> 
+</div>
 </div>
   <div class="checkBox">
     <fieldset class="checkList">
