@@ -26,8 +26,8 @@ return `
         <div class="aboutusmodal-content">
             <span class="closeModal">&times;</span>
             <div class="aboutuscontent">
-                <h1 class="aboutUs">Seed & Feed</h1>
-                    <h2 class="linkInfo">Meet the Developers:</h2>
+            <img class="modalImg" src="/img/logo.png">
+             
                         <article class="photos">
                             <section class="person">
                                 <a class="headshots" href="https://www.linkedin.com/in/benjamin-gibbs2/" target="_blank"><img class="profile" alt="Ben's Headshot" src="./img/people/Ben.jpg"/></a>

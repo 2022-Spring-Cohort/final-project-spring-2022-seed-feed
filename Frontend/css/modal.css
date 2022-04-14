@@ -41,7 +41,7 @@
 .aboutusmodal-content{
     margin-top: -68px;
     width: 60%;
-    height: 90%;
+    height: 95%;
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -88,16 +88,23 @@
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
-    max-width: 90%;
+    max-width: 95%;
     justify-content: space-between;
     margin-top: 15px;
     object-fit: contain;
-
+    background-color: white;
+    border: #4A5817 solid;
+    border-width: 3px;
+    border-radius: 25px;
+    padding: 15px;
+}
+.person *{
+    background-color: white;
 }
 
 .personName {
     font-size: xx-large;
-    padding-top: 25px;
+ 
 }
 
 .aboutText {
@@ -117,8 +124,9 @@
 }
 
 .logo {
-    height: 4.5em;
-    width: 4.5em;
+    height: 3em;
+    width: auto;
+    margin: 5px;
 }
 
 .logos {
@@ -145,4 +153,8 @@
         height: 20px;
         width: 100%;
     }
+}
+.modalImg{
+    height: 5em;
+    /* margin-bottom: 1em; */
 }
