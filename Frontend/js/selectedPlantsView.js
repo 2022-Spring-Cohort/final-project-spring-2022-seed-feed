@@ -17,7 +17,9 @@ return `
 <h2>Your last likely frost date is ${d.toDateString()}</h2>
 </div> 
 <div class="weatherDiv">
-  <p class="stationDisplay">All data is pulled using your nearest weather station: ${((stationName.toLowerCase(stationName)))}</p>
+  <p class="stationDisplay">Weather data is pulled using your nearest weather station: ${stationName.toLowerCase(
+    stationName
+  )}</p>
 </div>
 <div class="plantInfo">
 ${plants
@@ -52,15 +54,19 @@ ${plants
 </div>
 
 <div class="plantCalBtn">
-<button id="default-button">${calendarButton(indoorStartFrag(plant, d), plant, d)}</button>
+<button id="default-button">${calendarButton(
+      indoorStartFrag(plant, d),
+      plant,
+      d
+    )}</button>
 </div>
 
 </div>`;
   })
   .join("")}
 
-`;
 
+`;
 
 
 

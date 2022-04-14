@@ -585,3 +585,17 @@ justify-content: space-between;
     display: flex;
     justify-content: center;
 }
+
+.button_edaman-badge_div {
+    display: flex;
+        justify-content: space-between;
+    align-items: center;
+}
+.edamam-badge {
+/* display: flex; */
+width: 10em;
+}
+
+/* .edamam-badge img {
+    object-fit: contain;
+} */
