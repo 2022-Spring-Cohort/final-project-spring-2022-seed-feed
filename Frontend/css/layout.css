@@ -638,10 +638,11 @@ width: 10em;
 .image_license_div {
         display: flex;
     list-style-type: none;
+    height: 3em;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-
+    font-size: large;
     background-color: #ffd20a;
 }
 
