@@ -7,7 +7,7 @@ export default function calendarButton(plantDate, plant, fdate) {
     return `<div class="atcb" style="display:none;">
     {
       "name":"Today's the day to plant your ${plant.name}",
-      "description":"",
+      "description":"${plant.careTips}",
       "startDate":"${date.getFullYear()}-${(date.getMonth()+1)}-${date.getDate()}",
       "endDate":"${date.getFullYear()}-${(date.getMonth()+1)}-${date.getDate()}",
       "startTime":"11:00",
