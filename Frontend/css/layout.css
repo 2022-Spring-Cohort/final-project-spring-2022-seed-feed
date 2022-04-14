@@ -135,7 +135,7 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: column;
 height: 63em;
-width: 57em;
+width: 58em;
 margin-left: 2em;
 justify-content: space-around;
 padding-top: 1.5em;
@@ -164,7 +164,7 @@ margin-left: .75em;
 
 .checkPlantName{
 /* display: inline-block; */
-accent-color: #E58C60;
+accent-color: #e37e32;
 /* visibility: visible; */
 margin-right: .25em;
 }
@@ -236,7 +236,8 @@ margin-bottom: 1em;
     justify-content: space-around;
     padding-bottom: .5em;
     margin-top: 3em;
-    border-bottom: #E58C60 solid;
+    border-bottom: #e37e32 solid;
+    border-width: 3px;
     margin-bottom: 2em;
 }
 
@@ -551,14 +552,17 @@ justify-content: space-between;
     } */
 
 .careTips{
-    width: 25em;
+    width: 20em;
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    flex-direction: column;
+    /* align-content: center; */
+    /* justify-content: center; */
     margin-left: 10px;
-
 }
+.careTitle{
+    margin-bottom: 10px;
+}
+
 .topPlantDiv{
     display: flex;
     justify-content: center;
@@ -573,13 +577,20 @@ justify-content: space-between;
 }
 
 .companionDiv{
-    width: 10em;
+    width: 18em;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    /* align-items: center; */
+  
+    margin-left: 1em;
 }
-.companion{
+/* .companion{
     display: flex;
     align-content: center; 
+    justify-content: center;
+} */
+.compTitle{
+    margin-bottom: 10px;
 }
 .weatherDiv{
     display: flex;
@@ -594,6 +605,10 @@ justify-content: space-between;
 .edamam-badge {
 /* display: flex; */
 width: 10em;
+}
+.footer_documentation_link{
+    display: flex;
+    justify-content: center;
 }
 
 /* .edamam-badge img {
