@@ -67,8 +67,10 @@ ${plants
 
 <div class="footer_documentation_link">
   <p>API resources used on this page: <a href="https://www.phzmapi.org">phzmapi.org</a> and <a href="https://www.farmsense.net">farmsense.net</a></p>
-</div>
 
+
+
+</div>
 `;
 
 

@@ -599,3 +599,44 @@ width: 10em;
 /* .edamam-badge img {
     object-fit: contain;
 } */
+
+/* .pixabay_logo_div {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.pixabay_logo_div img {
+    width: 5em;
+} */
+
+/* ********************** */
+/* License Info html page        */
+/* ********************** */
+.License_info {
+    background-color: #E58C60;
+}
+
+/* ********************** */
+/* FOOTER License Info           */
+/* ********************** */
+
+.image_license_div {
+        display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #ffd20a;
+}
+
+.image_license_div p {
+    background-color: inherit;
+}
+.image_license_div img {
+        width: 5em;
+        background-color: inherit;
+}
+.image_license_div a {
+    background-color: inherit;
+}

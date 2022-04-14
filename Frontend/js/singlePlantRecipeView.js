@@ -7,7 +7,7 @@ return `
 
 <a href="https://www.edamam.com/" target="_blank"
 rel="noopener noreferrer">
-<img alt="Image of the Edaman Badge. Click this image to open www.edamam.come in a new tab." src="./img/Edamam_Badge_Transparent.svg" /></a>
+<img alt="Image of the Edaman Badge. Click this image to open www.edamam.com in a new tab." src="./img/Edamam_Badge_Transparent.svg" /></a>
 </div>
 
 </div>
