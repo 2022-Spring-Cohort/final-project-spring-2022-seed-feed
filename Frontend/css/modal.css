@@ -1,3 +1,4 @@
+
 .modal, .aboutusmodal {
     display: none;
     position: fixed;
@@ -12,10 +13,10 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 .modal-content, .aboutusmodal-content {
-    background-color: #DEE8EC;
+    background-color: #f0f5df;
     margin: auto;
     padding: 20px;
-    border: 6px solid #6BA9AC;
+    border: 6px solid #4A5817;
     width: 40%;
     border-radius: 10px;
     height: 40%;
@@ -28,49 +29,19 @@
   margin-top: -20px;
 }
 
-.close,.closeModal {
+.closeModal {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-.closeModal{
-    display: none;
-}
-
-.close:hover,.close:focus, .closeModal:hover, .closeModal:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
 
 
-.centerInput{
-    width: 40%;
-}
-.required{
-    color: red;
-    visibility: hidden;
-    font-size: large;
-    padding-top: 10px;
-}
-.addNewSongBtn{
-   margin-top: 10px;
-}
-.duration{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.songUrl{
-    margin-top: 10px;
-}
-
-
-/*about us Modal*/
+/* Modal box  */
 .aboutusmodal-content{
     margin-top: -68px;
     width: 60%;
-    height: 50%;
+    height: 95%;
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -78,6 +49,8 @@
     display: flex;
     margin-top: 20px;
     justify-content: center;
+
+    
 }
 
 .aboutuscontent, .aboutUs, .linkInfo{
@@ -90,30 +63,80 @@
 
 .photos{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     margin-left: 15px;
+    width: 80%;
 }
-.names p{
-    color: black;
-    font-weight: bold;
-    margin-top: -5px;
-}
-.profile{
+
+.profile, .headshots{
     height: 170px;
-    width: auto;
+    width: 170px;
     padding: 5px;
     transition: transform .2s;
     border-radius: 10px;
 }
+
 .profile:hover{
     -ms-transform: scale(.5);
     -webkit-transform: scale(1.2);
     transform: scale(1.2); 
 }
-.personName{
-    text-align: center;
+
+.person {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    max-width: 95%;
+    justify-content: space-between;
+    margin-top: 15px;
+    object-fit: contain;
+    background-color: white;
+    border: #4A5817 solid;
+    border-width: 3px;
+    border-radius: 25px;
+    padding: 15px;
 }
+.person *{
+    background-color: white;
+}
+
+.personName {
+    font-size: xx-large;
+ 
+}
+
+.aboutText {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.individual {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: fit-content;
+    width: 20em;
+}
+
+.logo {
+    height: 3em;
+    width: auto;
+    margin: 5px;
+}
+
+.logos {
+    display: flex;
+    justify-items: flex-end;
+    flex-direction: column;
+}
+
+
+
 
 @media screen and (max-width: 600px) {
     .photos{
@@ -130,4 +153,8 @@
         height: 20px;
         width: 100%;
     }
+}
+.modalImg{
+    height: 5em;
+    /* margin-bottom: 1em; */
 }
