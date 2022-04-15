@@ -10,11 +10,11 @@ export default function selectedPlantsView(plants, d, stationName){
 return `
 
 <div class="backButton">
-<img class ="backBtn" src="/img/back_arrow.png">
+<img alt="Back Button" class ="backBtn" src="/img/back_arrow.png">
 <button onclick="window.print()" class="printBtn">Print this Page</button>
 </div>
 <div class="frostDate">
-<h2>Your last likely frost date is ${d.toDateString()}</h2>
+<h2>Your average frost date is ${d.toDateString()}</h2>
 </div> 
 <div class="weatherDiv">
   <p class="stationDisplay">Weather data is pulled using your nearest weather station: ${stationName.toLowerCase(

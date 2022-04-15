@@ -9,7 +9,7 @@ export default function footer() {
     <p>Images on this site licensed under one of the following:
         <a href="https://pixabay.com/service/license/" target="_blank" rel="noopener noreferrer"><img
                 alt="pixabay.com logo. Click here to open pixabay's lincense page in a new window."
-                src="img/pixabay_logo.png"></a> | <a href="https://creativecommons.org/licenses/by/2.0/deed.en"
+                src="img/branded_logos/pixabay_logo.png"></a> | <a href="https://creativecommons.org/licenses/by/2.0/deed.en"
             target="_blank" rel="noopener noreferrer">CC BY 2.0</a> | <a
             href="https://creativecommons.org/licenses/by-nc-nd/2.0/" target="_blank" rel="noopener noreferrer">CC
             BY-NC-ND 2.0 </a>|
