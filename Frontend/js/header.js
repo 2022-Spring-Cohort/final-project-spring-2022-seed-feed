@@ -83,8 +83,10 @@ return `
                                         <a href="https://github.com/Shoko1321" target="_blank"><img class="logo" alt="GitHub Logo" src="./img/branded_logos/GitHub-Mark-120px-plus.png"></a>
                                         <a href="https://www.linkedin.com/in/dylan-creech1/" target="_blank"><img class="logo" alt="LinkedIn Logo" src="./img/branded_logos/LI-In-Bug.png"></a>
                                     </div>
-                                
+                          
                         </section>
+                        <br>
+                              <h2>Contact the team at SeedandFeed2022@gmail.com</h2>
                 </article>
             </div>
         </div>

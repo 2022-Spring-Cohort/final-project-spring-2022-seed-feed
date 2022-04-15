@@ -833,7 +833,7 @@ table.Company_Logos th {
     }
 
     table.Company_Logos td:nth-of-type(1):before {
-        content: "Company Logo File Name";
+        content: "Logo File Name";
     }
 
     table.Company_Logos td:nth-of-type(2):before {
