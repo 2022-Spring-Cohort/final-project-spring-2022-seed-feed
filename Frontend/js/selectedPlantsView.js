@@ -14,7 +14,7 @@ return `
 <button onclick="window.print()" class="printBtn">Print this Page</button>
 </div>
 <div class="frostDate">
-<h2>Your average frost date is ${d.toDateString()}</h2>
+<h2>Your average last frost date is ${d.toDateString()}</h2>
 </div> 
 <div class="weatherDiv">
   <p class="stationDisplay">Weather data is pulled using your nearest weather station: ${stationName.toLowerCase(
