@@ -50,7 +50,7 @@ p {
     width: 90%;
     justify-content: space-around;
     align-items: center;
-    /* background-color: #F2780C; */
+   
     background-color: #ffd20a;
 }
 .navList li{
@@ -60,7 +60,7 @@ p {
     display: flex;
     justify-content: center;
     font-size: x-large;
-    /* background-color: #F2780C; */
+
         background-color: #ffd20a;
 }
 .mainLogo{
@@ -163,15 +163,15 @@ margin-left: .75em;
 }
 
 .checkPlantName{
-/* display: inline-block; */
+
 accent-color: #e37e32;
-/* visibility: visible; */
+
 margin-right: .25em;
 }
 .checkPlantName:checked{
-/* display: inline-block; */
+
 background-color: #8AA81E;
-/* visibility: visible; */
+
 }
 
 
@@ -188,7 +188,7 @@ background-color: #8AA81E;
     padding-right: 1em;
     border-radius: 25px;
     text-align: center;
-    /* font-size: 30px; */
+
 }
 .goodbye{
   display: flex;
@@ -241,13 +241,11 @@ margin-bottom: 1em;
     margin-bottom: 2em;
 }
 
+.resourceTitle h1 {
 
-.resourceTitle h1{
-/* color: #ffd20a; */
-/* color: white; */
-background-color: inherit;
-font-size: 32px;
-/* font-weight: 200; */
+    background-color: inherit;
+    font-size: 32px;
+
 }
 
 .resourceElTitle {
@@ -264,19 +262,16 @@ font-size: 32px;
 }
 
 .resourceContent{
-    /* display: flex;
-    flex-direction: column; */
+
             border-radius: 25px;
             border: #4f6111 solid;
         margin-left: 10px;
         margin-bottom: 10px;
         margin-top: 10px;
-        /* background-color: #4f6111; */
+
 }
 
-/* .seedDiv{
 
-} */
 .seedStart{
     display: flex;
 }
@@ -290,17 +285,16 @@ font-size: 32px;
 .resourceSectionDivCHANGEMYNAME {
     display: flex;
     flex-direction: column;
-    /* border-radius: 25px; */
-    /* border: #465908 solid; */
+
     align-items: center;
-    /* background-color: #465908; */
+
 }
 
 .resourceImage {
     object-fit: contain;
-    /* margin-right: 10px; */
+
     margin: 20px;
-    /* border-radius: 20px; */
+
    
 }
 .resourceContent:hover{
@@ -311,11 +305,10 @@ font-size: 32px;
 
 .resourceBlockSection{
     display: flex;
-                /* border-radius: 25px; */
+
             margin-left: 10px;
         margin-bottom: 10px;
-        /* background-color: #4f6111; */
-        /* background-color: #ffffff; */
+
         padding-right: 10px;
        
 }
@@ -328,11 +321,9 @@ font-size: 32px;
     margin-top: 3em;
     padding: 0em 4em 0em 4em;
 
-
-
-
-    /* ******************* */
 }
+    /* ******************* */
+
 .zipcodeSection{
     display: flex;
     width: 30em;
@@ -373,19 +364,9 @@ margin-right: 0px;
 .welcome{
     text-align: center;
 }
-/* @media screen and (max-width: 600px) {
-    .mainSection{
-        flex-wrap: nowrap;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: 30px;
-    }
-} */
+
 
 label{
-    /* border: none;
-    background: none; */
     order: 2;
 
 }
@@ -401,33 +382,29 @@ input {
     flex-wrap: wrap;
     margin-left: 20em;
     margin-right: 20em;
-
 }
-
 
 .allRecDiv {
     display: flex;
     flex: 20%;
     padding: 20px;
-    border:  #4f6111 solid;
+    border: #4f6111 solid;
     border-width: 3px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-        border-radius: 25px;
-        margin-left: 2em;
-        margin-bottom: 3em; 
-        background-color: #ffffff;
-   
-
-    
+    border-radius: 25px;
+    margin-left: 2em;
+    margin-bottom: 3em;
+    background-color: #ffffff;
 }
-.allRecDiv>*{
+
+.allRecDiv>* {
     background-color: #ffffff;
 }
 
 @media screen and (max-width: 992px) {
-    .allRecDiv{
+    .allRecDiv {
         flex: 50%;
     }
 }
@@ -445,18 +422,17 @@ input {
 
 .allRecDiv:hover {
     transform: scale(1.1);
-                cursor: pointer;
+    cursor: pointer;
 }
 
 .plantPhotoSingle img {
     object-fit: contain;
 }
 
-.plantPhotoSingle{
+.plantPhotoSingle {
     height: 10em;
-        /* max-width: 250px; */
-        object-fit: fill;
-        border-radius: 5px;
+    object-fit: fill;
+    border-radius: 5px;
 }
 /* ****************************** */
 /*  singlePlantRecipeView BELOW           */
@@ -467,7 +443,7 @@ input {
     flex-wrap: wrap;
     margin-left: 20em;
     margin-right: 20em;
-    
+
 }
 
 .singleRecipeDiv {
@@ -478,22 +454,22 @@ input {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-            border-radius: 25px;
-        /* margin-left: 10px; */
-        /* margin-bottom: 10px; */
-        background-color: #ffffff;
-        margin-left: 2em;
-        margin-bottom: 3em; 
-        text-align: center;
-        border-width: 3px;
+    border-radius: 25px;
+
+    background-color: #ffffff;
+    margin-left: 2em;
+    margin-bottom: 3em;
+    text-align: center;
+    border-width: 3px;
 
 }
-.singleRecipeDiv *{
+
+.singleRecipeDiv * {
     background-color: #ffffff;
 }
 
 @media screen and (max-width: 992px) {
-    .singleRecipeDiv{
+    .singleRecipeDiv {
         flex: 50%;
     }
 }
@@ -512,26 +488,37 @@ input {
     transform: scale(1.2);
 }
 
-.frostDate{
+.frostDate {
     display: flex;
     justify-content: center;
 }
-.backBtn{
+
+.backBtn {
     height: 2.5em;
     padding-top: .5em;
     padding-left: 3em;
 }
-.backToHomeBtn{
+
+.backToHomeBtn {
     height: 2.5em;
     padding-top: .5em;
     padding-left: 2em;
 }
-.backButton{
+
+.backButton {
     display: flex;
-justify-content: space-between;
+    justify-content: space-between;
 }
 
-.singlePlant{
+.backBtn:hover {
+    cursor: pointer;
+}
+
+.backToHomeBtn:hover {
+    cursor: pointer;
+}
+
+.singlePlant {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -543,100 +530,433 @@ justify-content: space-between;
     border-radius: 25px;
     padding: 1em 1em 1em 1em;
 }
-.singlePlant *{
+
+.singlePlant * {
     background-color: white;
 }
-/* @media screen and (max-width: 600px){
-    .singlePlant {
-        flex-direction: column;
-    } */
 
-.careTips{
+.careTips {
     width: 20em;
     display: flex;
     flex-direction: column;
-    /* align-content: center; */
-    /* justify-content: center; */
+
     margin-left: 10px;
 }
-.careTitle{
+
+.careTitle {
     margin-bottom: 10px;
 }
 
-.topPlantDiv{
+.topPlantDiv {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
 
 }
-.bottomPlantDiv{
+
+.bottomPlantDiv {
     display: flex;
     justify-content: center;
     padding-top: 1em;
     justify-content: space-evenly;
 }
 
-.companionDiv{
+.companionDiv {
     width: 18em;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-  
+
+
     margin-left: 1em;
 }
-/* .companion{
-    display: flex;
-    align-content: center; 
-    justify-content: center;
-} */
-.compTitle{
+
+.compTitle {
     margin-bottom: 10px;
 }
-.weatherDiv{
+
+.weatherDiv {
     display: flex;
     justify-content: center;
 }
 
 .button_edaman-badge_div {
     display: flex;
-        justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
 }
+
 .edamam-badge {
-/* display: flex; */
-width: 10em;
+    width: 10em;
 }
-.footer_documentation_link{
+
+.footer_documentation_link {
     display: flex;
     justify-content: center;
 }
 
-/* .edamam-badge img {
-    object-fit: contain;
-} */
-
-/* .pixabay_logo_div {
-    display: flex;
-    align-items: center;
-    align-content: center;
-}
-.pixabay_logo_div img {
-    width: 5em;
-} */
-
 /* ********************** */
 /* License Info html page        */
 /* ********************** */
-.License_info {
-    background-color: #E58C60;
+.License_info h1 {
+    margin-left: 1em;
+    font-size: x-large;
 }
 
+.License_info th {
+    font-size: large;
+}
+
+.License_info td {
+    font-size: medium;
+}
+/* *************************** */
+
+/* PERSONAL PHOTOS TABLE */
+table.Personal_Photos {
+    border-collapse: collapse;
+    border: 1px solid #cdcdcd;
+    font: normal 12px arial;
+    width: 50%;
+    margin-left: 1em;
+}
+
+table.Personal_Photos td,
+table.Personal_Photos th {
+    border: 1px solid #cdcdcd;
+    padding: 2px;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    table.Personal_Photos table,
+    table.Personal_Photos thead,
+    table.Personal_Photos tbody,
+    table.Personal_Photos th,
+    table.Personal_Photos td,
+    table.Personal_Photos tr {
+        display: block;
+    }
+
+    table.Personal_Photos thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table.Personal_Photos tr {
+        border-bottom: 1px solid #ccc;
+    }
+
+    table.Personal_Photos td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    table.Personal_Photos td:before {
+        position: absolute;
+        top: 3px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    table.Personal_Photos td:nth-of-type(1):before {
+        content: "Personal Photo";
+    }
+
+    table.Personal_Photos td:nth-of-type(2):before {
+        content: "Copyright Holder";
+    }
+
+    table.Personal_Photos td:nth-of-type(3):before {
+        content: "License";
+    }
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    table.Personal_Photos body {
+        padding: 0;
+        margin: 0;
+        width: 320px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    table.Personal_Photos body {
+        width: 495px;
+    }
+}
+
+/* *************************** */
+
+/* SITE IMAGES TABLE */
+
+table.Site_Images {
+    border-collapse: collapse;
+    border: 1px solid #cdcdcd;
+    font: normal 12px arial;
+    width: 50%;
+    margin-left: 1em;
+}
+
+table.Site_Images td,
+table.Site_Images th {
+    border: 1px solid #cdcdcd;
+    padding: 2px;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    table.Site_Images table,
+    table.Site_Images thead,
+    table.Site_Images tbody,
+    table.Site_Images th,
+    table.Site_Images td,
+    table.Site_Images tr {
+        display: block;
+    }
+
+    table.Site_Images thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table.Site_Images tr {
+        border-bottom: 1px solid #ccc;
+    }
+
+    table.Site_Images td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    table.Site_Images td:before {
+        position: absolute;
+        top: 3px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    table.Site_Images td:nth-of-type(1):before {
+        content: "Image File Name";
+    }
+
+    table.Site_Images td:nth-of-type(2):before {
+        content: "Copyright Holder";
+    }
+
+    table.Site_Images td:nth-of-type(3):before {
+        content: "License";
+    }
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    table.Site_Images body {
+        padding: 0;
+        margin: 0;
+        width: 320px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    table.Site_Imagess body {
+        width: 495px;
+    }
+}
+
+/* *************************** */
+
+/* COMPANY LOGOS TABLE */
+
+table.Company_Logos {
+    border-collapse: collapse;
+    border: 1px solid #cdcdcd;
+    font: normal 12px arial;
+    width: 50%;
+    margin-left: 1em;
+}
+
+table.Company_Logos td,
+table.Company_Logos th {
+    border: 1px solid #cdcdcd;
+    padding: 2px;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    table.Company_Logos table,
+    table.Company_Logos thead,
+    table.Company_Logos tbody,
+    table.Company_Logos th,
+    table.Company_Logos td,
+    table.Company_Logos tr {
+        display: block;
+    }
+
+    table.Company_Logos thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table.Company_Logos tr {
+        border-bottom: 1px solid #ccc;
+    }
+
+    table.Company_Logos td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    table.Company_Logos td:before {
+        position: absolute;
+        top: 3px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    table.Company_Logos td:nth-of-type(1):before {
+        content: "Company Logo File Name";
+    }
+
+    table.Company_Logos td:nth-of-type(2):before {
+        content: "Company Name";
+    }
+
+    table.Company_Logos td:nth-of-type(3):before {
+        content: "Link";
+    }
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    table.Company_Logos body {
+        padding: 0;
+        margin: 0;
+        width: 320px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    table.Company_Logoss body {
+        width: 495px;
+    }
+}
+
+/* *************************** */
+
+/* PLANT PHOTOS TABLE */
+
+table.Plant_Photos {
+    border-collapse: collapse;
+    border: 1px solid #cdcdcd;
+    font: normal 12px arial;
+    width: 90%;
+    margin-left: 1em;
+}
+
+table.Plant_Photos td,
+table.Plant_Photos th {
+    border: 1px solid #cdcdcd;
+    padding: 2px;
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    table.Plant_Photos table,
+    table.Plant_Photos thead,
+    table.Plant_Photos tbody,
+    table.Plant_Photos th,
+    table.Plant_Photos td,
+    table.Plant_Photos tr {
+        display: block;
+    }
+
+    table.Plant_Photos thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    table.Plant_Photos tr {
+        border-bottom: 1px solid #ccc;
+    }
+
+    table.Plant_Photos td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    table.Plant_Photos td:before {
+        position: absolute;
+        top: 3px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    table.Plant_Photos td:nth-of-type(1):before {
+        content: "Image File Name";
+    }
+
+    table.Plant_Photos td:nth-of-type(2):before {
+        content: "Image Source Link";
+    }
+
+    table.Plant_Photos td:nth-of-type(3):before {
+        content: "Name of License";
+    }
+
+    table.Plant_Photos td:nth-of-type(4):before {
+        content: "License Link";
+    }
+
+    table.Plant_Photos td:nth-of-type(5):before {
+        content: "User's Profile Link";
+    }
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    table.Plant_Photos body {
+        padding: 0;
+        margin: 0;
+        width: 320px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    table.Plant_Photos body {
+        width: 495px;
+    }
+}
 /* ********************** */
 /* FOOTER License Info           */
 /* ********************** */
 
 .image_license_div {
-        display: flex;
+    display: flex;
     list-style-type: none;
     height: 3em;
     width: 100%;
@@ -649,10 +969,15 @@ width: 10em;
 .image_license_div p {
     background-color: inherit;
 }
+
 .image_license_div img {
-        width: 5em;
-        background-color: inherit;
+    width: 5em;
+    background-color: inherit;
 }
+
 .image_license_div a {
     background-color: inherit;
 }
+
+
+
