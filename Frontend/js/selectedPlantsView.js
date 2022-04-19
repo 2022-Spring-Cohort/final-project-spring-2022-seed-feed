@@ -5,7 +5,7 @@ import indoorCalcFrag
 
 
 export default function selectedPlantsView(plants, d, stationName){
-    console.log(plants + d);
+
     const lengthOfDay = (24 * 60 * 60 * 1000);
 return `
 

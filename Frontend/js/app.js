@@ -23,32 +23,31 @@ function findFrostDateFromZipCode(plants) {
  
   fetch(`https://phzmapi.org/${zipNumber}.json`)
     .then((res) => {
-      console.log(res);
+
       if (res.status == "404") {
         alert("Invalid zip");
       }
       return res.json();
     })
     .then((zipDetails) => {
-      console.log(zipDetails);
+    ;
 
       fetch(
-        `https://api.farmsense.net/v1/frostdates/stations/?lat=${zipDetails.coordinates.lat}&lon=${zipDetails.coordinates.lon}`
+        `http://api.farmsense.net/v1/frostdates/stations/?lat=${zipDetails.coordinates.lat}&lon=${zipDetails.coordinates.lon}`
       )
         .then((res) => res.json())
         .then((stationID) => {
           stationID;
           let stationName = stationID[0].name;
           fetch(
-            `https://api.farmsense.net/v1/frostdates/probabilities/?station=${stationID[0].id}&season=1`
+            `http://api.farmsense.net/v1/frostdates/probabilities/?station=${stationID[0].id}&season=1`
           )
             .then((res) => res.json())
             .then((frostDateNumb) => {
               frostDateNumb[0].prob_50;
-              console.log(frostDateNumb[0].prob_50);
+    
               let fdate = frostDateNumb[0].prob_50;
-              console.log("F-DATE NEXT");
-              console.log(fdate);
+
 
               let date = dateConverter(fdate);
               let indoorDateStart = new Date(date);
@@ -66,11 +65,11 @@ function findFrostDateFromZipCode(plants) {
 // -----------------------------------------------------------------------------
 // ***************************************************************
 function dateConverter(fdate) {
-console.log(fdate);
+
                 let fdateMonth = fdate.substring(0, 2);
-                console.log(fdateMonth);
+
                 let fdateDay = fdate.substring(2);
-                console.log(fdateDay);
+
                 let today = new Date()
                 const d = new Date(today.getFullYear(), fdateMonth - 1, fdateDay);
                   return d;
@@ -82,7 +81,7 @@ console.log(fdate);
 // *************************************************
 const containerEl = document.querySelector(".container");
 function makeHomeView() {
-  console.log("working");
+
   fetch("http://localhost:8080/")
     .then((res) => res.json())
     .then((plants) => {
@@ -104,10 +103,8 @@ function makeHomeViewFromJSON(plants){
   const submit_button = document.querySelector(".submitButton");
   submit_button.addEventListener("click", ValidateVegSelection);
 
-  // Deleted this section because submit button already does this function.
-  // const zipSubBtn = containerEl.querySelector(".zipSubmitButton");
-  // zipSubBtn.addEventListener("click", findFrostDateFromZipCode);
-  console.log(plants.id);
+
+
 
   // //All recipes button
   const allRecButton = document.querySelector(".allRecipesButton");
@@ -259,11 +256,11 @@ gardenButton.addEventListener('click',makeGardenResourcesView);
 // *************************************************
 //need tpo change makeSinglePlantRecipeView to take in just "plant"
 function makeSinglePlantRecipeView(plant){
-  console.log("this is working");
+
   fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${plant.name}&app_id=2762fe12&app_key=9a0f0246c250ede5b70c49d6ee4d1116`)
 .then(res =>res.json())
 .then(recipes =>{
-console.log(recipes);
+
   //This should take in plant name and list of recipe JSON
   makeSinglePlantRecipeViewFromJson(recipes);
 })
@@ -313,7 +310,7 @@ function makeAboutModal(){
   aboutUsBtn.addEventListener("click", () =>{
     aboutUsModal.style.display = 'block';
     closeModalBtn.style.display = 'block';
-    console.log('working');
+
   })
   closeModalBtn.addEventListener('click', () => {
     aboutUsModal.style.display = 'none';

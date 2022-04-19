@@ -1,5 +1,5 @@
 export default function calendarButton(plantDate, plant, fdate) {
-  console.log(plant);
+
   let date = plantDate;
   if(plantDate == "Not recommended."){
     date = fdate;
